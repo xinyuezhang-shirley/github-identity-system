@@ -189,3 +189,16 @@ GitHub-facing identity system will be tempted by all of them:
 - More than one accent hue; gradients as decoration; glassmorphism; rounded-xl corners
 - Redundant restatement across elements
 - Sterile, generic "clean UI" that deletes meaning along with clutter — **"cleaner but worse" is a valid verdict in MuseLab's own review process.**
+
+### Anti-patterns observed in the failed profile attempt (2026-07-17)
+
+Cited from the thin HTML prototypes under `prototypes/` (folio / instrument / topology / ledger):
+
+1. **Cream editorial template** — MuseLab tokens alone without Echo geometry as structure (`prototypes/folio/index.html`). Reads as generic AI-portfolio, not a person-specific instrument.
+2. **Diagram as sidebar garnish** — SVGs sitting under captions rather than determining grouping (`assets/diagrams/*` linked as illustrations, not compositional spines).
+3. **Shared chrome, weak differentiation** — identical eyebrow/name/hairline stack across Directions B–E; only the middle widget changed.
+4. **Cards / tables as default project UI** — ledger and folio lists without field placement (`prototypes/ledger/index.html`).
+5. **Empty white space without tension** — large vertical padding with no counterform relationship to the generative field.
+6. **Not the public profile** — work lived only in `github-identity-system`, never published to `xinyuezhang-shirley/xinyuezhang-shirley`.
+
+Corrective rule for this redesign: **Echo orbit/vortex math structures the page; MuseLab supplies light-mode material only.**

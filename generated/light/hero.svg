@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1012" height="430"
+     viewBox="0 0 1012 430" role="img" aria-label="Xinyue Zhang computational field guide — Echo orbit of practice domains with numbered project observations">
+  <title>Xinyue Zhang computational field guide — Echo orbit of practice domains with numbered project observations</title>
+  
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#faf6ef"/>
+      <stop offset="52%" stop-color="#f4efe6"/>
+      <stop offset="100%" stop-color="#ebe3d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1012" height="430" fill="url(#pg)"/>
+  <text x="36.00" y="34.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500" letter-spacing="0.3em">COMPUTATIONAL FIELD GUIDE</text>
+  <text x="976.00" y="34.00" fill="#8b8478" opacity="1.000" text-anchor="end" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:400" letter-spacing="0.18em">XZ · SYS</text>
+  <text x="36.00" y="104.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:56px;font-weight:500">Xinyue Zhang</text>
+  <line x1="36.00" y1="118.00" x2="236.00" y2="118.00" stroke="#c9bca9" stroke-width="1" stroke-opacity="1.000"/>
+  <text x="36.00" y="142.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:12px;font-weight:400" letter-spacing="0.14em">Shirley</text>
+  <text x="36.00" y="180.00" fill="#332e29" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:15px;font-weight:400;font-style:italic">I design systems that move</text>
+  <text x="36.00" y="202.00" fill="#332e29" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:15px;font-weight:400;font-style:italic">between computation, language,</text>
+  <text x="36.00" y="224.00" fill="#332e29" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:15px;font-weight:400;font-style:italic">and human judgment.</text>
+  <text x="36.00" y="255.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.22em">MAPPING</text>
+  <text x="36.00" y="276.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:11px;font-weight:400">inner ring  ·  practice cores</text>
+  <text x="36.00" y="294.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:11px;font-weight:400">mid marks  ·  selected work</text>
+  <text x="36.00" y="312.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:11px;font-weight:400">outer ring ·  related concerns</text>
+  <text x="36.00" y="348.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px;font-weight:400;font-style:italic">Projects are numbered observations</text>
+  <text x="36.00" y="366.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px;font-weight:400;font-style:italic">in the field — not portfolio cards.</text>
+  <circle cx="620.00" cy="248.00" r="71.54" fill="none" opacity="0.550" stroke="#dfd4c8" stroke-width="1"/>
+  <circle cx="620.00" cy="248.00" r="99.36" fill="none" opacity="0.450" stroke="#dfd4c8" stroke-width="1"/>
+  <circle cx="620.00" cy="248.00" r="135.74" fill="none" opacity="0.320" stroke="#dfd4c8" stroke-width="1" stroke-dasharray="2 5"/>
+  <circle cx="620.00" cy="248.00" r="2.20" fill="#8b6914" opacity="0.900"/>
+  <text x="620.00" y="96.26" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.16em">ECHO ORBIT  ·  practice gravity</text>
+  <text x="680.99" y="214.35" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:14px;font-weight:500">AI</text>
+  <text x="687.20" y="270.08" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:14px;font-weight:500">agents</text>
+  <text x="635.67" y="310.82" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:14px;font-weight:500">HCI</text>
+  <text x="569.73" y="293.81" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:14px;font-weight:500">design</text>
+  <text x="753.03" y="272.27" fill="#57534e" opacity="0.850" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">infra</text>
+  <text x="563.51" y="359.09" fill="#57534e" opacity="0.850" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">research</text>
+  <text x="498.27" y="193.94" fill="#57534e" opacity="0.850" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">writing</text>
+  <circle cx="544.16" cy="185.48" r="9.00" fill="#f4efe6" opacity="0.980" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="544.16" y="188.98" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">01</text>
+  <circle cx="702.05" cy="202.73" r="9.00" fill="#f4efe6" opacity="0.980" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="702.05" y="206.23" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">02</text>
+  <circle cx="661.65" cy="331.77" r="9.00" fill="#f4efe6" opacity="0.980" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="661.65" y="335.27" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">03</text>
+  <circle cx="626.87" cy="160.77" r="7.50" fill="#f4efe6" opacity="0.980" stroke="#57534e" stroke-width="1.25"/>
+  <text x="626.87" y="164.27" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">04</text>
+  <circle cx="714.23" cy="278.96" r="7.50" fill="#f4efe6" opacity="0.980" stroke="#57534e" stroke-width="1.25"/>
+  <text x="714.23" y="282.46" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">05</text>
+  <circle cx="580.59" cy="325.50" r="7.50" fill="#f4efe6" opacity="0.980" stroke="#57534e" stroke-width="1.25"/>
+  <text x="580.59" y="329.00" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">06</text>
+  <line x1="836.00" y1="90.00" x2="836.00" y2="390.00" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.650"/>
+  <text x="860.00" y="100.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.24em">OBS</text>
+  <text x="860.00" y="128.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">01</text>
+  <text x="888.00" y="128.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">Echo</text>
+  <text x="888.00" y="144.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">design · course</text>
+  <text x="860.00" y="170.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">02</text>
+  <text x="888.00" y="170.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">MuseLab</text>
+  <text x="888.00" y="186.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">ai · independent</text>
+  <text x="860.00" y="212.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">03</text>
+  <text x="888.00" y="212.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">rag_project</text>
+  <text x="888.00" y="228.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">ai · independent</text>
+  <text x="860.00" y="254.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">04</text>
+  <text x="888.00" y="254.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">food-recommender</text>
+  <text x="888.00" y="270.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">hci · course</text>
+  <text x="860.00" y="296.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">05</text>
+  <text x="888.00" y="296.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">cs229-final</text>
+  <text x="888.00" y="312.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">research · course</text>
+  <text x="860.00" y="338.00" fill="#8b6914" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:500">06</text>
+  <text x="888.00" y="338.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">weibo-topic-scraper</text>
+  <text x="888.00" y="354.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">infra · independent</text>
+  <line x1="36.00" y1="402.00" x2="976.00" y2="402.00" stroke="#dfd4c8" stroke-width="1.0" stroke-opacity="0.750"/>
+  <text x="36.00" y="418.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">geometry: echo placeOrbitRing  ·  material: muselab paper</text>
+</svg>

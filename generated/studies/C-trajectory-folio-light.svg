@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1012" height="520"
+     viewBox="0 0 1012 520" role="img" aria-label="Study C: Trajectory folio with project disturbances and language inset">
+  <title>Study C: Trajectory folio with project disturbances and language inset</title>
+  
+  <defs>
+    <radialGradient id="wash" cx="18%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="rgba(139,105,20,0.120)"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1012" height="520" fill="#f4efe6"/>
+  <rect x="0" y="0" width="1012" height="520" fill="url(#wash)" opacity="0.9"/>
+  <text x="40.00" y="40.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:10px;font-weight:400" letter-spacing="0.26em">FOLIO  ·  INDEXED TRAJECTORY</text>
+  <text x="40.00" y="86.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:48px;font-weight:500">Xinyue Zhang</text>
+  <text x="40.00" y="112.00" fill="#57534e" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:14px;font-weight:400;font-style:italic">I design systems that move between computation, language, and human judgment.</text>
+  <line x1="40.00" y1="210.00" x2="972.00" y2="210.00" stroke="#c9bca9" stroke-width="1.2" stroke-opacity="1.000"/>
+  <line x1="80.00" y1="204.00" x2="80.00" y2="216.00" stroke="#57534e" stroke-width="1" stroke-opacity="1.000"/>
+  <text x="80.00" y="232.00" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.08em">AI systems</text>
+  <line x1="364.00" y1="204.00" x2="364.00" y2="216.00" stroke="#57534e" stroke-width="1" stroke-opacity="1.000"/>
+  <text x="364.00" y="232.00" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.08em">agentic systems</text>
+  <line x1="648.00" y1="204.00" x2="648.00" y2="216.00" stroke="#57534e" stroke-width="1" stroke-opacity="1.000"/>
+  <text x="648.00" y="232.00" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.08em">HCI</text>
+  <line x1="932.00" y1="204.00" x2="932.00" y2="216.00" stroke="#57534e" stroke-width="1" stroke-opacity="1.000"/>
+  <text x="932.00" y="232.00" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.08em">computational design</text>
+  <line x1="631.00" y1="210.00" x2="631.00" y2="141.57" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="631.00" cy="141.57" r="4.00" fill="#f4efe6" opacity="1.000" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="639.00" y="145.57" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">01  Echo</text>
+  <text x="639.00" y="161.57" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">course</text>
+  <line x1="60.00" y1="210.00" x2="60.00" y2="169.89" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="60.00" cy="169.89" r="4.00" fill="#f4efe6" opacity="1.000" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="68.00" y="173.89" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">02  MuseLab</text>
+  <text x="68.00" y="189.89" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">independent</text>
+  <line x1="89.00" y1="210.00" x2="89.00" y2="140.00" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="89.00" cy="140.00" r="4.00" fill="#f4efe6" opacity="1.000" stroke="#1c1917" stroke-width="1.25"/>
+  <text x="97.00" y="144.00" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">03  rag_project</text>
+  <text x="97.00" y="160.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">independent</text>
+  <line x1="371.00" y1="210.00" x2="371.00" y2="247.28" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="371.00" cy="247.28" r="3.00" fill="#f4efe6" opacity="1.000" stroke="#57534e" stroke-width="1.25"/>
+  <text x="379.00" y="251.28" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">04  cs278FoodRecommender</text>
+  <text x="379.00" y="267.27" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">course</text>
+  <line x1="941.00" y1="210.00" x2="941.00" y2="265.82" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="941.00" cy="265.82" r="3.00" fill="#f4efe6" opacity="1.000" stroke="#57534e" stroke-width="1.25"/>
+  <text x="949.00" y="269.82" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">05  cs229FinalProject</text>
+  <text x="949.00" y="285.82" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">course</text>
+  <line x1="703.00" y1="210.00" x2="703.00" y2="270.55" stroke="#dfd4c8" stroke-width="1" stroke-opacity="0.700" stroke-dasharray="2 3"/>
+  <circle cx="703.00" cy="270.55" r="3.00" fill="#f4efe6" opacity="1.000" stroke="#57534e" stroke-width="1.25"/>
+  <text x="711.00" y="274.55" fill="#1c1917" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">06  williamest-topic-scraper-weibo</text>
+  <text x="711.00" y="290.55" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.1em">independent</text>
+  <circle cx="150.00" cy="420.00" r="28.00" fill="none" opacity="0.400" stroke="#dfd4c8" stroke-width="1"/>
+  <circle cx="150.00" cy="420.00" r="52.00" fill="none" opacity="0.400" stroke="#dfd4c8" stroke-width="1"/>
+  <circle cx="150.00" cy="420.00" r="76.00" fill="none" opacity="0.400" stroke="#dfd4c8" stroke-width="1" stroke-dasharray="2 4"/>
+  <text x="178.00" y="420.00" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px;font-weight:400">TypeScript</text>
+  <text x="164.00" y="440.61" fill="#1c1917" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:12px;font-weight:400">Jupyter</text>
+  <text x="105.59" y="443.00" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:10px;font-weight:400">HTML</text>
+  <text x="104.37" y="398.81" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:10px;font-weight:400">Python</text>
+  <text x="184.85" y="362.59" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:10px;font-weight:400">C#</text>
+  <text x="225.92" y="416.95" fill="#57534e" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:10px;font-weight:400">JavaScript</text>
+  <text x="150.00" y="520.00" fill="#8b8478" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.08em">language topology  ·  byte share</text>
+  <line x1="420.00" y1="455.00" x2="960.00" y2="455.00" stroke="#dfd4c8" stroke-width="1.0" stroke-opacity="0.500"/>
+  <polyline fill="none" stroke="#1c1917" stroke-width="1.4" stroke-opacity="0.75" points="420.0,432.5 430.4,455.0 440.8,455.0 451.2,455.0 461.5,455.0 471.9,455.0 482.3,455.0 492.7,455.0 503.1,455.0 513.5,455.0 523.8,455.0 534.2,455.0 544.6,455.0 555.0,455.0 565.4,455.0 575.8,455.0 586.2,450.0 596.5,455.0 606.9,455.0 617.3,452.5 627.7,452.5 638.1,455.0 648.5,455.0 658.8,455.0 669.2,455.0 679.6,455.0 690.0,455.0 700.4,455.0 710.8,455.0 721.2,455.0 731.5,455.0 741.9,455.0 752.3,455.0 762.7,455.0 773.1,455.0 783.5,455.0 793.8,455.0 804.2,455.0 814.6,450.0 825.0,450.0 835.4,455.0 845.8,445.0 856.2,450.0 866.5,445.0 876.9,442.5 887.3,405.0 897.7,440.0 908.1,455.0 918.5,455.0 928.8,455.0 939.2,455.0 949.6,447.5 960.0,455.0"/>
+  <text x="420.00" y="473.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">signal  ·  61 contributions  ·  13 active weeks  ·  unsmothed</text>
+  <line x1="40.00" y1="492.00" x2="972.00" y2="492.00" stroke="#dfd4c8" stroke-width="1.0" stroke-opacity="0.700"/>
+  <text x="40.00" y="508.00" fill="#8b8478" opacity="1.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400">study C  ·  trajectory folio  ·  projects as disturbances along practice axis</text>
+</svg>

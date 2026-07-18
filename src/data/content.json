@@ -1,0 +1,119 @@
+{
+  "identity": {
+    "name": "Xinyue Zhang",
+    "preferred": "Shirley",
+    "github": "xinyuezhang-shirley",
+    "statement": "I design systems that move between computation, language, and human judgment.",
+    "domains": [
+      { "id": "ai", "label": "AI systems", "band": "core" },
+      { "id": "agents", "label": "agentic systems", "band": "core" },
+      { "id": "hci", "label": "HCI", "band": "core" },
+      { "id": "design", "label": "computational design", "band": "core" },
+      { "id": "infra", "label": "software infrastructure", "band": "related" },
+      { "id": "research", "label": "research", "band": "related" },
+      { "id": "writing", "label": "writing", "band": "related" }
+    ]
+  },
+  "observations": [
+    {
+      "id": "01",
+      "name": "Echo",
+      "repo": "cs146j-26sp/echo",
+      "url": "https://github.com/cs146j-26sp/echo",
+      "blurb": "A computational text-art instrument: vortex, orbit, constellation, and imprint modes over analyzed language.",
+      "domain": "design",
+      "emphasis": "computational",
+      "provenance": "course",
+      "availability": "public",
+      "maturity": "polished",
+      "recency": 0.95,
+      "ring": "core",
+      "angle_slot": 0
+    },
+    {
+      "id": "02",
+      "name": "MuseLab",
+      "repo": "xinyuezhang-shirley/MuseLab",
+      "url": "https://github.com/xinyuezhang-shirley/MuseLab",
+      "blurb": "A literary workshop dossier: manuscript critique, semantic pulse graphs, and Echo-adapted imprint fields.",
+      "domain": "ai",
+      "emphasis": "human",
+      "provenance": "independent",
+      "availability": "public",
+      "maturity": "polished",
+      "recency": 0.9,
+      "ring": "core",
+      "angle_slot": 1
+    },
+    {
+      "id": "03",
+      "name": "rag_project",
+      "repo": "xinyuezhang-shirley/rag_project",
+      "url": "https://github.com/xinyuezhang-shirley/rag_project",
+      "blurb": "Retrieval-augmented generation pipeline work — indexing, retrieval, and answer assembly under real constraints.",
+      "domain": "ai",
+      "emphasis": "computational",
+      "provenance": "independent",
+      "availability": "public",
+      "maturity": "active",
+      "recency": 1.0,
+      "ring": "core",
+      "angle_slot": 2
+    },
+    {
+      "id": "04",
+      "name": "food-recommender",
+      "repo": "xinyuezhang-shirley/cs278FoodRecommender",
+      "url": "https://github.com/xinyuezhang-shirley/cs278FoodRecommender",
+      "blurb": "Human-centered recommender exploration: preference, context, and the interface between taste and model output.",
+      "domain": "hci",
+      "emphasis": "human",
+      "provenance": "course",
+      "availability": "public",
+      "maturity": "complete",
+      "recency": 0.75,
+      "ring": "related",
+      "angle_slot": 0
+    },
+    {
+      "id": "05",
+      "name": "cs229-final",
+      "repo": "xinyuezhang-shirley/cs229FinalProject",
+      "url": "https://github.com/xinyuezhang-shirley/cs229FinalProject",
+      "blurb": "Machine-learning research project — formal modeling with empirical evaluation.",
+      "domain": "research",
+      "emphasis": "computational",
+      "provenance": "course",
+      "availability": "public",
+      "maturity": "complete",
+      "recency": 0.55,
+      "ring": "related",
+      "angle_slot": 1
+    },
+    {
+      "id": "06",
+      "name": "weibo-topic-scraper",
+      "repo": "xinyuezhang-shirley/williamest-topic-scraper-weibo",
+      "url": "https://github.com/xinyuezhang-shirley/williamest-topic-scraper-weibo",
+      "blurb": "Topic collection infrastructure for Weibo — scraping, structuring, and making social text inspectable.",
+      "domain": "infra",
+      "emphasis": "computational",
+      "provenance": "independent",
+      "availability": "public",
+      "maturity": "complete",
+      "recency": 0.7,
+      "ring": "related",
+      "angle_slot": 2
+    }
+  ],
+  "professional": {
+    "label": "agentic contracting systems",
+    "note": "Professional work on agentic systems for contract workflows — described only at portfolio summary level.",
+    "domain": "agents",
+    "availability": "private"
+  },
+  "language_exclusions": {
+    "repos": ["cs340Project4"],
+    "reason": "vendored/bundled dependency blob, not authored code"
+  }
+}
