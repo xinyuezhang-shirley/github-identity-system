@@ -1,0 +1,20 @@
+<svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img"
+  aria-label="Language topology: real aggregated byte share across non-fork repositories, placed on a polar field where radius is inverse to share">
+  <title>Language topology</title>
+  <desc>Real GitHub language byte totals from assets/generated/languages.json, placed by scripts/build_diagrams.py using the ring-placement formula in docs/design-dna.md.</desc>
+  <circle cx="300" cy="260" r="46" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 5"/>
+  <circle cx="300" cy="260" r="118" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 5"/>
+  <circle cx="300" cy="260" r="182" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 5"/>
+  <text x="346.0" y="260.0" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:33.8px" opacity="0.95" fill="currentColor">TypeScript</text>
+<text x="254.0" y="260.0" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:26.5px" opacity="0.74" fill="currentColor">Jupyter Notebook</text>
+<text x="403.6" y="306.4" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:20.5px" opacity="0.56" fill="currentColor">HTML</text>
+<text x="278.2" y="355.1" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:17.6px" opacity="0.48" fill="currentColor">Python</text>
+<text x="183.0" y="272.4" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:15.7px" opacity="0.43" fill="currentColor">C#</text>
+<text x="249.5" y="172.6" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:15.5px" opacity="0.42" fill="currentColor">JavaScript</text>
+<text x="385.8" y="193.6" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:15.0px" opacity="0.41" fill="currentColor">ShaderLab</text>
+<text x="398.3" y="385.6" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:13.8px" opacity="0.37" fill="currentColor">CSS</text>
+<text x="184.7" y="375.5" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:13.3px" opacity="0.36" fill="currentColor">HLSL</text>
+<text x="130.4" y="205.8" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:13.3px" opacity="0.36" fill="currentColor">PLpgSQL</text>
+<text x="310.5" y="111.0" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:13.0px" opacity="0.35" fill="currentColor">Shell</text>
+<text x="476.0" y="222.1" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:13.0px" opacity="0.35" fill="currentColor">Mako</text>
+</svg>

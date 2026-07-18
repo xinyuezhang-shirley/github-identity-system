@@ -1,0 +1,34 @@
+<svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" role="img"
+  aria-label="Proof sketch of the spiral placement formula: angle equals index times 0.42, radius grows linearly with index">
+  <title>Spiral placement proof sketch</title>
+  <desc>26 points from vortex.js's own formula (docs/design-dna.md, Strand 04), not sampled data.</desc>
+  <circle cx="130" cy="130" r="60" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-dasharray="2 3"/>
+  <circle cx="130" cy="130" r="115" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-dasharray="2 3"/>
+  <line x1="130" y1="130" x2="63.4" y2="29.0" stroke="currentColor" stroke-opacity="0.25" stroke-dasharray="2 3"/>
+  <circle cx="140.0" cy="130.0" r="1.40" opacity="0.90" fill="currentColor"/>
+<circle cx="143.9" cy="135.1" r="1.47" opacity="0.88" fill="currentColor"/>
+<circle cx="143.6" cy="142.5" r="1.54" opacity="0.86" fill="currentColor"/>
+<circle cx="137.8" cy="150.0" r="1.61" opacity="0.84" fill="currentColor"/>
+<circle cx="126.6" cy="155.1" r="1.68" opacity="0.82" fill="currentColor"/>
+<circle cx="111.8" cy="155.5" r="1.75" opacity="0.79" fill="currentColor"/>
+<circle cx="96.5" cy="149.7" r="1.82" opacity="0.77" fill="currentColor"/>
+<circle cx="84.5" cy="137.6" r="1.88" opacity="0.75" fill="currentColor"/>
+<circle cx="79.6" cy="120.8" r="1.95" opacity="0.73" fill="currentColor"/>
+<circle cx="84.4" cy="102.2" r="2.02" opacity="0.71" fill="currentColor"/>
+<circle cx="99.6" cy="85.7" r="2.09" opacity="0.69" fill="currentColor"/>
+<circle cx="123.8" cy="75.1" r="2.16" opacity="0.67" fill="currentColor"/>
+<circle cx="153.3" cy="73.8" r="2.23" opacity="0.65" fill="currentColor"/>
+<circle cx="182.8" cy="83.3" r="2.30" opacity="0.62" fill="currentColor"/>
+<circle cx="206.2" cy="103.4" r="2.37" opacity="0.60" fill="currentColor"/>
+<circle cx="218.0" cy="131.2" r="2.44" opacity="0.58" fill="currentColor"/>
+<circle cx="214.4" cy="162.3" r="2.51" opacity="0.56" fill="currentColor"/>
+<circle cx="194.4" cy="191.0" r="2.58" opacity="0.54" fill="currentColor"/>
+<circle cx="160.0" cy="211.3" r="2.65" opacity="0.52" fill="currentColor"/>
+<circle cx="116.3" cy="218.5" r="2.72" opacity="0.50" fill="currentColor"/>
+<circle cx="70.8" cy="209.9" r="2.78" opacity="0.48" fill="currentColor"/>
+<circle cx="31.9" cy="185.6" r="2.85" opacity="0.46" fill="currentColor"/>
+<circle cx="7.7" cy="148.7" r="2.92" opacity="0.43" fill="currentColor"/>
+<circle cx="4.0" cy="105.2" r="2.99" opacity="0.41" fill="currentColor"/>
+<circle cx="23.1" cy="62.6" r="3.06" opacity="0.39" fill="currentColor"/>
+<circle cx="63.4" cy="29.0" r="3.13" opacity="0.37" fill="currentColor"/>
+</svg>
