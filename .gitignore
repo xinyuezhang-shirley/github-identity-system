@@ -6,3 +6,7 @@ node_modules/
 # profile repo; keep only the auditable layout.json / audit.json in git.
 profile-art/specimen/out/*.png
 profile-art/specimen/out/*.svg
+# Artifact fonts are fetched from Google Fonts (see artifacts/README); artifact
+# outputs are regenerated and published to the profile repo.
+profile-art/artifacts/fonts/
+profile-art/artifacts/out/

@@ -1,0 +1,45 @@
+# Artifacts — living editorial figures
+
+Small authored figures that carry Echo/MuseLab's visual voice into the GitHub
+profile. Each is a transparent SVG with vector-outlined type and calm,
+seamless, procedural motion (draw · emerge · breathe).
+
+## Why outlines
+
+SVGs shown through GitHub's `<img>` pipeline cannot load external fonts. Text is
+therefore converted to vector paths with `opentype.js`, so the real faces
+(Cormorant Garamond, IBM Plex Mono, Caveat) render everywhere with no
+dependency. CSS animation and `prefers-color-scheme` both work in that context;
+`<style>` is wrapped in `<![CDATA[…]]>` so the SVG stays valid XML.
+
+## Fonts (not committed)
+
+Fetch the source faces into `fonts/` (from the Google Fonts repo):
+
+```bash
+mkdir -p fonts && cd fonts
+base=https://raw.githubusercontent.com/google/fonts/main/ofl
+curl -sL -o cormorant.ttf       "$base/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf"
+curl -sL -o caveat.ttf          "$base/caveat/Caveat%5Bwght%5D.ttf"
+curl -sL -o plexmono.ttf        "$base/ibmplexmono/IBMPlexMono-Regular.ttf"
+curl -sL -o plexmono-medium.ttf "$base/ibmplexmono/IBMPlexMono-Medium.ttf"
+```
+
+## Build & preview
+
+```bash
+node build-plate.mjs          # -> out/plate-01.svg (+ copy to profile assets)
+node preview.mjs plate-01.svg 560   # -> out/preview-light.png / preview-dark.png
+```
+
+`preview.mjs` embeds the SVG as an `<img>` on warm-paper and GitHub-dark grounds
+and screenshots the settled state, so composition and both themes can be
+audited the way GitHub renders them.
+
+## Figures
+
+| File | Role |
+| --- | --- |
+| `build-plate.mjs` → `plate-01.svg` | Plate 01 masthead for the specimen |
+| `lib.mjs` | Font loading + text→outline layout helpers |
+| `preview.mjs` | Two-theme `<img>`-context preview |
