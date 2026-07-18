@@ -1,0 +1,11 @@
+Cormorant Garamond, Literata, IBM Plex Mono, and Caveat are each licensed
+under the SIL Open Font License, Version 1.1, which permits bundling,
+embedding, and redistribution.
+
+Full license text: https://openfontlicense.org
+
+Font sources (Google Fonts, latin subset, self-hosted here as .woff2):
+  https://fonts.google.com/specimen/Cormorant+Garamond
+  https://fonts.google.com/specimen/Literata
+  https://fonts.google.com/specimen/IBM+Plex+Mono
+  https://fonts.google.com/specimen/Caveat
