@@ -25,6 +25,13 @@ curl -sL -o plexmono.ttf        "$base/ibmplexmono/IBMPlexMono-Regular.ttf"
 curl -sL -o plexmono-medium.ttf "$base/ibmplexmono/IBMPlexMono-Medium.ttf"
 ```
 
+Caveat ships variable-only and `opentype.js` mis-reads some of its variable
+glyphs (e.g. lowercase `s`), so instance it to a static weight:
+
+```bash
+python3 -m fontTools.varLib.instancer fonts/caveat.ttf wght=500 -o fonts/caveat-static.ttf
+```
+
 ## Build & preview
 
 ```bash
@@ -41,5 +48,6 @@ audited the way GitHub renders them.
 | File | Role |
 | --- | --- |
 | `build-plate.mjs` → `plate-01.svg` | Plate 01 masthead for the specimen |
+| `build-note.mjs` → `note-field.svg` | Handwritten field-note (writes in) |
 | `lib.mjs` | Font loading + text→outline layout helpers |
 | `preview.mjs` | Two-theme `<img>`-context preview |

@@ -21,7 +21,10 @@ export const fonts = {
   cormorant: load("cormorant.ttf"),
   mono: load("plexmono.ttf"),
   monoMedium: load("plexmono-medium.ttf"),
-  caveat: load("caveat.ttf"),
+  // Caveat is variable-only from Google Fonts; opentype.js mis-reads some of its
+  // variable glyphs (e.g. lowercase s). Use a static instance (wght=500),
+  // produced with: python3 -m fontTools.varLib.instancer caveat.ttf wght=500 -o caveat-static.ttf
+  caveat: load("caveat-static.ttf"),
 };
 
 const round = (n) => Math.round(n * 100) / 100;
