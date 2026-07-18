@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger — identity system prototype</title>
+<link rel="stylesheet" href="../../assets/typography/fontfaces.css">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<style>
+  .wrap{ max-width:820px; margin:0 auto; padding:clamp(2.2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 5rem; position:relative; z-index:1; }
+  .m-eyebrow{ font-family:var(--font-mono); font-size:9px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); }
+  .m-name{ font-family:var(--font-display); font-weight:500; font-size:clamp(1.8rem,5vw,2.6rem); margin:.35rem 0 .2rem; }
+  .m-tag{ font-family:var(--font-mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  hr.idx-rule{ border:0; border-top:1px solid var(--line); margin:1.4rem 0 0; }
+  table{ width:100%; border-collapse:collapse; margin-top:1.2rem; font-family:var(--font-mono); font-size:.74rem; }
+  caption{ caption-side:top; text-align:left; font-size:.6rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+  thead th{ text-align:left; font-weight:500; color:var(--muted); font-size:.6rem; letter-spacing:.08em; text-transform:uppercase; padding:.5rem .6rem .5rem 0; border-bottom:1px solid var(--line-strong); }
+  tbody td{ padding:.55rem .6rem .55rem 0; border-bottom:1px solid var(--line); color:var(--ink-soft, var(--ink)); vertical-align:top; }
+  tbody tr:hover td{ color:var(--ink); }
+  td.name{ font-family:var(--font-display); font-size:1rem; }
+  td.name a{ color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; }
+  td.name a:hover{ border-bottom-color:var(--accent); }
+  td.num{ text-align:right; font-variant-numeric:tabular-nums; }
+  .colophon{ margin-top:2rem; padding-top:1.2rem; border-top:1px solid var(--line); font-family:var(--font-mono); font-size:.66rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 class="sr-only" style="position:absolute;left:-9999px;">Ledger prototype: every repository as one row in a dated, itemized accounting table, in the identity direction with the lowest ornament and the highest legibility.</h1>
+
+  <p class="m-eyebrow">Accounting · Ledger (Direction E)</p>
+  <div class="m-name">Xinyue Zhang</div>
+  <p class="m-tag" id="ledger-tag">itemized, dated, no hierarchy games — loading…</p>
+  <hr class="idx-rule">
+
+  <table>
+    <caption>assets/generated/repos.json, unfiltered, sorted by last push</caption>
+    <thead>
+      <tr><th>repository</th><th>language</th><th class="num">size (kb)</th><th>last push</th></tr>
+    </thead>
+    <tbody id="ledger-body">
+      <tr><td colspan="4">loading…</td></tr>
+    </tbody>
+  </table>
+
+  <div class="colophon">Least "generative art" of the four prototypes on purpose — see docs/identity-directions.md §E.</div>
+</div>
+
+<script type="module">
+async function loadJSON(path) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(res.status);
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+(async () => {
+  const repos = await loadJSON('../../assets/generated/repos.json');
+  const body = document.getElementById('ledger-body');
+  const tag = document.getElementById('ledger-tag');
+
+  if (!repos) {
+    tag.textContent = 'could not load repos.json — serve over http, not file://';
+    body.innerHTML = '<tr><td colspan="4">Run e.g. `python3 -m http.server` from the repo root and open this page via http://localhost.</td></tr>';
+    return;
+  }
+
+  const sorted = [...repos].sort((a, b) => new Date(b.pushedAt) - new Date(a.pushedAt));
+  tag.textContent = `itemized, dated, no hierarchy games — ${sorted.length} repositories`;
+
+  body.innerHTML = sorted.map(r => `
+    <tr>
+      <td class="name"><a href="https://github.com/xinyuezhang-shirley/${r.name}" target="_blank" rel="noopener">${r.name}</a></td>
+      <td>${r.primaryLanguage ? r.primaryLanguage.name : '—'}</td>
+      <td class="num">${Math.round((r.languages.edges.reduce((s, e) => s + e.size, 0)) / 1024)}</td>
+      <td>${r.pushedAt.slice(0, 10)}</td>
+    </tr>
+  `).join('');
+})();
+</script>
+</body>
+</html>
