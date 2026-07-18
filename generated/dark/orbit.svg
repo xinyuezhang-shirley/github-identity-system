@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="268"
+     viewBox="0 0 520 268" role="img" aria-label="Echo orbit of practice domains with numbered project observations">
+  <title>Echo orbit of practice domains with numbered project observations</title>
+  
+  <circle cx="260.00" cy="128.00" r="50.28" fill="none" opacity="0.700" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+  <circle cx="260.00" cy="128.00" r="71.00" fill="none" opacity="0.550" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+  <circle cx="260.00" cy="128.00" r="94.68" fill="none" opacity="0.400" stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-dasharray="2 5"/>
+  <circle cx="260.00" cy="128.00" r="2.00" fill="#c9b896" opacity="0.900"/>
+  <text x="298.46" y="98.20" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">AI</text>
+  <text x="304.12" y="150.18" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">agents</text>
+  <text x="258.53" y="174.24" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">HCI</text>
+  <text x="216.92" y="151.85" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:13px;font-weight:500">design</text>
+  <text x="353.62" y="141.02" fill="#8b949e" opacity="0.900" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">infra</text>
+  <text x="212.20" y="203.19" fill="#8b949e" opacity="0.900" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">research</text>
+  <text x="179.70" y="81.85" fill="#8b949e" opacity="0.900" text-anchor="middle" dominant-baseline="middle" style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:11px;font-weight:400">writing</text>
+  <circle cx="210.71" cy="77.25" r="8.00" fill="none" opacity="1.000" stroke="#e6edf3" stroke-width="1.2"/>
+  <text x="210.71" y="80.45" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">01</text>
+  <circle cx="323.41" cy="103.33" r="8.00" fill="none" opacity="1.000" stroke="#e6edf3" stroke-width="1.2"/>
+  <text x="323.41" y="106.53" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">02</text>
+  <circle cx="286.46" cy="190.62" r="8.00" fill="none" opacity="1.000" stroke="#e6edf3" stroke-width="1.2"/>
+  <text x="286.46" y="193.82" fill="#e6edf3" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">03</text>
+  <circle cx="189.30" cy="176.59" r="7.00" fill="none" opacity="1.000" stroke="#8b949e" stroke-width="1.2"/>
+  <text x="189.30" y="179.79" fill="#8b949e" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:500">04</text>
+  <text x="260.00" y="258.00" fill="#8b949e" opacity="1.000" text-anchor="middle" dominant-baseline="alphabetic" style="font-family:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;font-size:9px;font-weight:400" letter-spacing="0.14em">practice gravity  ·  echo orbit</text>
+</svg>

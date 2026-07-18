@@ -1,63 +1,51 @@
 # Xinyue Zhang
 
-<!-- computational field guide — geometry from Echo orbit, material from MuseLab / Echo -->
+I design systems that move between computation, language, and human judgment.
+
+<sub>also Shirley · AI systems · agentic systems · HCI · computational design · research</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-light.svg">
-  <img alt="Computational field guide for Xinyue Zhang — Echo orbit of practice domains with numbered project observations" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/orbit-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/orbit-light.svg">
+  <img alt="Echo practice orbit — domains on concentric rings with numbered project observations" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/orbit-light.svg" width="520">
 </picture>
 
-<p align="center">
-  <sub>
-    <code>AI systems</code>&nbsp;·&nbsp;
-    <code>agentic systems</code>&nbsp;·&nbsp;
-    <code>HCI</code>&nbsp;·&nbsp;
-    <code>computational design</code>&nbsp;·&nbsp;
-    <code>software</code>&nbsp;·&nbsp;
-    <code>research</code>
-  </sub>
-</p>
+## Selected work
 
-<br>
+**01 — [Echo](https://github.com/cs146j-26sp/echo)**  
+Computational text-art instrument: vortex, orbit, constellation, and imprint modes over analyzed language.  
+<sub>`computational design` · course</sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-light.svg">
-  <img alt="Indexed observations of selected projects — Echo, MuseLab, rag_project, and related work — with domain and provenance annotations" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-light.svg" width="100%">
-</picture>
+**02 — [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab)**  
+Literary workshop dossier for manuscript critique, semantic pulse graphs, and generative interpretation.  
+<sub>`AI systems` · independent</sub>
 
-### Links
+**03 — [rag_project](https://github.com/xinyuezhang-shirley/rag_project)**  
+Retrieval-augmented generation under real constraints — indexing, retrieval, and answer assembly.  
+<sub>`AI systems` · independent</sub>
 
-| # | Project | Notes |
-|---|---------|-------|
-| 01 | [Echo](https://github.com/cs146j-26sp/echo) | Computational text-art instrument |
-| 02 | [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab) | Literary workshop dossier |
-| 03 | [rag_project](https://github.com/xinyuezhang-shirley/rag_project) | Retrieval-augmented generation |
-| 04 | [food-recommender](https://github.com/xinyuezhang-shirley/cs278FoodRecommender) | Human-centered recommender work |
-| 05 | [cs229-final](https://github.com/xinyuezhang-shirley/cs229FinalProject) | Machine-learning research project |
-| 06 | [weibo-topic-scraper](https://github.com/xinyuezhang-shirley/williamest-topic-scraper-weibo) | Social-text collection infrastructure |
+**04 — [food-recommender](https://github.com/xinyuezhang-shirley/cs278FoodRecommender)**  
+Human-centered recommender work: preference, context, and the interface between taste and model output.  
+<sub>`HCI` · course</sub>
 
-<br>
+Also: agentic contracting systems in professional work — described only at portfolio summary level.
+
+## Practice
+
+Work moves across AI and agentic systems, human-computer interaction, computational design, software infrastructure, and research writing. Geometry above places those concerns as bands; projects appear as numbered observations rather than a catalog of cards.
+
+## Language topology
+
+Authored bytes across public repositories (excluding vendored blobs).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-light.svg">
-  <img alt="Language topology from real GitHub byte shares on polar rings — TypeScript and Jupyter lead; cs340Project4 excluded as vendored" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-light.svg" width="100%">
-</picture>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-light.svg">
-  <img alt="Unsmoothed 53-week contribution signal from the GitHub contribution calendar" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-light.svg" width="100%">
+  <img alt="Compact language topology from public repository byte shares" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-light.svg" width="560">
 </picture>
 
 ---
 
 <sub>
-Geometry adapted from <a href="https://github.com/cs146j-26sp/echo">Echo</a> orbit/vortex systems.
-Light material language from <a href="https://github.com/xinyuezhang-shirley/MuseLab">MuseLab</a>.
-Generated from the <a href="https://github.com/xinyuezhang-shirley/github-identity-system">github-identity-system</a> workspace.
+Orbit geometry from [Echo](https://github.com/cs146j-26sp/echo) · light material from [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab) · source [github-identity-system](https://github.com/xinyuezhang-shirley/github-identity-system)
 </sub>

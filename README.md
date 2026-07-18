@@ -1,50 +1,35 @@
 # github-identity-system
 
-Development workspace for a generative visual identity whose first public
-artifact is the GitHub profile README for **Xinyue Zhang**
-(`xinyuezhang-shirley`).
+Development workspace for Xinyue Zhang’s generative identity.
+Public surface: [`xinyuezhang-shirley/xinyuezhang-shirley`](https://github.com/xinyuezhang-shirley/xinyuezhang-shirley).
 
-This repository is **not** the public profile. The finished surface lives in
-[`xinyuezhang-shirley/xinyuezhang-shirley`](https://github.com/xinyuezhang-shirley/xinyuezhang-shirley).
+## Architecture
 
-## Direction
+**Markdown carries content. SVG carries only geometry Markdown cannot express.**
 
-**Computational Field Guide** — Echo orbit (`placeOrbitRing`) as the visual
-spine; MuseLab paper tokens for light mode; Echo night for dark mode.
+The public README is a continuous editorial document:
 
-See `docs/study-evaluation.md` (Studies A/B/C) and `docs/design-dna.md`.
+1. Native name + introduction  
+2. One transparent signature orbit (Echo gravity)  
+3. Native selected-work list (numbered, linked)  
+4. Native practice note  
+5. One compact language topology  
 
-## Generate
+No full-width poster panels. No duplicated project lists. No opaque canvases.
 
-```bash
-python3 scripts/generate_profile.py all
-python3 -m http.server 8765   # open /previews/index.html
-```
-
-## Publish into the profile repo
+## Generate / publish
 
 ```bash
+python3 scripts/generate_profile.py final
+python3 -m http.server 8765   # /previews/index.html
 python3 scripts/publish_profile.py ../xinyuezhang-shirley
 ```
 
 ## Source lineage
 
-| System | Origin |
-|--------|--------|
-| Orbit / vortex math | `echo/frontend/helperJS/vortex.js` |
-| Light tokens | `MuseLab/frontend/src/index.css` |
-| Dark tokens | `echo/frontend/styles.css` |
-| Live GitHub data | `scripts/fetch_github_data.py` → `assets/generated/` |
-
-## Layout
-
-```
-src/data/           curated identity + observations
-src/primitives/     Echo orbit/vortex + themes
-src/generators/     SVG compositions
-scripts/            fetch / generate / publish
-generated/          light + dark SVG panels + PROFILE_README.md
-previews/           local GitHub-width preview
-docs/               design DNA, study evaluation
-prototypes/         earlier Direction B–E sketches (superseded)
-```
+| Piece | Origin |
+|-------|--------|
+| Orbit geometry | `echo/frontend/helperJS/vortex.js` (`placeOrbitRing`) |
+| Light strokes / accent | MuseLab paper tokens |
+| Dark strokes | Echo night neutrals on transparent |
+| Live language data | `assets/generated/languages.json` |

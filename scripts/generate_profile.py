@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Generate composition studies and final GitHub profile SVG assets.
+"""Generate profile assets with Markdown-first architecture.
+
+Native Markdown carries content. SVG carries only geometry Markdown cannot
+express: one signature orbit + one compact language topology.
 
 Usage:
-    python3 scripts/generate_profile.py studies
     python3 scripts/generate_profile.py final
     python3 scripts/generate_profile.py all
 """
@@ -15,7 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.generators import compositions as C
+from src.generators.signature import language_topology_compact, project_mark, signature_orbit
+from src.generators import compositions as C  # studies only
 from src.primitives.themes import DARK, LIGHT
 
 
@@ -38,182 +41,164 @@ def generate_studies() -> None:
 def generate_final() -> None:
     for theme in (LIGHT, DARK):
         d = ROOT / "generated" / theme.name
-        write(d / "hero.svg", C.profile_hero(theme))
-        write(d / "observations.svg", C.profile_observations(theme))
-        write(d / "languages.svg", C.profile_languages(theme))
-        write(d / "signal.svg", C.profile_signal(theme))
+        write(d / "orbit.svg", signature_orbit(theme))
+        write(d / "languages.svg", language_topology_compact(theme))
+        for i, core in (("01", True), ("02", True), ("03", True), ("04", False)):
+            write(d / f"mark-{i}.svg", project_mark(theme, i, core=core))
 
-    # also stage a ready-to-copy profile README draft in generated/
-    readme = build_profile_readme()
-    write(ROOT / "generated" / "PROFILE_README.md", readme)
+    write(ROOT / "generated" / "PROFILE_README.md", build_profile_readme())
+    generate_preview_html()
 
 
 def build_profile_readme() -> str:
-    # Absolute asset URLs help GitHub’s profile surface resolve images
-    # immediately after a brand-new special repository is created.
+    """Markdown-first profile. Content once. SVG only for geometry."""
     base = "https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets"
+
     return f'''# Xinyue Zhang
 
-<!-- computational field guide — geometry from Echo orbit, material from MuseLab / Echo -->
+I design systems that move between computation, language, and human judgment.
+
+<sub>also Shirley · AI systems · agentic systems · HCI · computational design · research</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{base}/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="{base}/hero-light.svg">
-  <img alt="Computational field guide for Xinyue Zhang — Echo orbit of practice domains with numbered project observations" src="{base}/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="{base}/orbit-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="{base}/orbit-light.svg">
+  <img alt="Echo practice orbit — domains on concentric rings with numbered project observations" src="{base}/orbit-light.svg" width="520">
 </picture>
 
-<p align="center">
-  <sub>
-    <code>AI systems</code>&nbsp;·&nbsp;
-    <code>agentic systems</code>&nbsp;·&nbsp;
-    <code>HCI</code>&nbsp;·&nbsp;
-    <code>computational design</code>&nbsp;·&nbsp;
-    <code>software</code>&nbsp;·&nbsp;
-    <code>research</code>
-  </sub>
-</p>
+## Selected work
 
-<br>
+**01 — [Echo](https://github.com/cs146j-26sp/echo)**  
+Computational text-art instrument: vortex, orbit, constellation, and imprint modes over analyzed language.  
+<sub>`computational design` · course</sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{base}/observations-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="{base}/observations-light.svg">
-  <img alt="Indexed observations of selected projects — Echo, MuseLab, rag_project, and related work — with domain and provenance annotations" src="{base}/observations-light.svg" width="100%">
-</picture>
+**02 — [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab)**  
+Literary workshop dossier for manuscript critique, semantic pulse graphs, and generative interpretation.  
+<sub>`AI systems` · independent</sub>
 
-### Links
+**03 — [rag_project](https://github.com/xinyuezhang-shirley/rag_project)**  
+Retrieval-augmented generation under real constraints — indexing, retrieval, and answer assembly.  
+<sub>`AI systems` · independent</sub>
 
-| # | Project | Notes |
-|---|---------|-------|
-| 01 | [Echo](https://github.com/cs146j-26sp/echo) | Computational text-art instrument |
-| 02 | [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab) | Literary workshop dossier |
-| 03 | [rag_project](https://github.com/xinyuezhang-shirley/rag_project) | Retrieval-augmented generation |
-| 04 | [food-recommender](https://github.com/xinyuezhang-shirley/cs278FoodRecommender) | Human-centered recommender work |
-| 05 | [cs229-final](https://github.com/xinyuezhang-shirley/cs229FinalProject) | Machine-learning research project |
-| 06 | [weibo-topic-scraper](https://github.com/xinyuezhang-shirley/williamest-topic-scraper-weibo) | Social-text collection infrastructure |
+**04 — [food-recommender](https://github.com/xinyuezhang-shirley/cs278FoodRecommender)**  
+Human-centered recommender work: preference, context, and the interface between taste and model output.  
+<sub>`HCI` · course</sub>
 
-<br>
+Also: agentic contracting systems in professional work — described only at portfolio summary level.
+
+## Practice
+
+Work moves across AI and agentic systems, human-computer interaction, computational design, software infrastructure, and research writing. Geometry above places those concerns as bands; projects appear as numbered observations rather than a catalog of cards.
+
+## Language topology
+
+Authored bytes across public repositories (excluding vendored blobs).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="{base}/languages-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="{base}/languages-light.svg">
-  <img alt="Language topology from real GitHub byte shares on polar rings — TypeScript and Jupyter lead; cs340Project4 excluded as vendored" src="{base}/languages-light.svg" width="100%">
-</picture>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{base}/signal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="{base}/signal-light.svg">
-  <img alt="Unsmoothed 53-week contribution signal from the GitHub contribution calendar" src="{base}/signal-light.svg" width="100%">
+  <img alt="Compact language topology from public repository byte shares" src="{base}/languages-light.svg" width="560">
 </picture>
 
 ---
 
 <sub>
-Geometry adapted from <a href="https://github.com/cs146j-26sp/echo">Echo</a> orbit/vortex systems.
-Light material language from <a href="https://github.com/xinyuezhang-shirley/MuseLab">MuseLab</a>.
-Generated from the <a href="https://github.com/xinyuezhang-shirley/github-identity-system">github-identity-system</a> workspace.
+Orbit geometry from [Echo](https://github.com/cs146j-26sp/echo) · light material from [MuseLab](https://github.com/xinyuezhang-shirley/MuseLab) · source [github-identity-system](https://github.com/xinyuezhang-shirley/github-identity-system)
 </sub>
 '''
 
 
 def generate_preview_html() -> None:
-    """Local preview approximating GitHub content width."""
     html = '''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profile preview</title>
+<title>Profile preview — Markdown first</title>
 <style>
   :root { color-scheme: light dark; }
-  body { margin: 0; background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  .bar { display:flex; gap:8px; padding:12px 16px; border-bottom:1px solid #30363d; position:sticky; top:0; background:#0d1117; z-index:2; flex-wrap:wrap; align-items:center; }
-  .bar button { background:#21262d; color:#e6edf3; border:1px solid #30363d; border-radius:6px; padding:6px 10px; cursor:pointer; font-size:12px; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #0d1117; color: #e6edf3; }
+  body.light { background: #ffffff; color: #1f2328; }
+  .bar { display:flex; gap:8px; padding:12px 16px; border-bottom:1px solid #30363d; position:sticky; top:0;
+    background: inherit; z-index:2; flex-wrap:wrap; align-items:center; font-size:12px; }
+  body.light .bar { border-color: #d0d7de; }
+  .bar button { background: transparent; color: inherit; border:1px solid #30363d; border-radius:6px;
+    padding:6px 10px; cursor:pointer; font-size:12px; }
+  body.light .bar button { border-color: #d0d7de; }
   .bar button.active { border-color:#58a6ff; color:#58a6ff; }
-  .frame { margin: 24px auto; background: #ffffff; color:#1f2328; border:1px solid #d0d7de; border-radius:6px; padding: 32px 24px; box-sizing:border-box; }
-  body.dark .frame { background:#0d1117; color:#e6edf3; border-color:#30363d; }
+  .frame { margin: 24px auto; padding: 0 16px 48px; box-sizing:border-box; line-height:1.6; }
   .frame.w1012 { width: min(1012px, 100%); }
   .frame.w768 { width: min(768px, 100%); }
   .frame.w480 { width: min(480px, 100%); }
   .frame.w360 { width: min(360px, 100%); }
-  img { max-width:100%; height:auto; display:block; margin: 0 0 20px; }
-  table { width:100%; border-collapse: collapse; font-size:14px; margin: 12px 0 28px; }
-  th, td { border-top:1px solid #d0d7de; padding:8px; text-align:left; }
-  body.dark th, body.dark td { border-color:#30363d; }
-  a { color: #0969da; } body.dark a { color:#58a6ff; }
-  sub, .meta { color:#656d76; } body.dark sub, body.dark .meta { color:#8b949e; }
-  .studies img { margin-bottom:40px; border:1px solid #d0d7de; }
-  body.dark .studies img { border-color:#30363d; }
+  h1 { font-size: 2em; font-weight: 600; margin: 0 0 0.5em; border-bottom: 1px solid #21262d; padding-bottom: 0.3em; }
+  body.light h1 { border-color: #d8dee4; }
+  h2 { font-size: 1.35em; font-weight: 600; margin: 1.6em 0 0.6em; border-bottom: 1px solid #21262d; padding-bottom: 0.25em; }
+  body.light h2 { border-color: #d8dee4; }
+  p { margin: 0 0 1em; }
+  sub, .meta { color: #8b949e; } body.light sub, body.light .meta { color: #656d76; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em;
+    background: rgba(110,118,129,0.2); padding: 0.15em 0.35em; border-radius: 4px; }
+  a { color: #58a6ff; text-decoration: none; } body.light a { color: #0969da; }
+  a:hover { text-decoration: underline; }
+  img { max-width: 100%; height: auto; display: block; margin: 1em 0 1.4em; }
+  hr { border: 0; border-top: 1px solid #21262d; margin: 2em 0; }
+  body.light hr { border-color: #d8dee4; }
+  .proj { margin: 0 0 1.25em; }
+  .proj strong { font-weight: 600; }
 </style>
 </head>
-<body class="dark">
+<body>
 <div class="bar">
-  <strong style="margin-right:8px">Preview</strong>
+  <strong>Markdown-first preview</strong>
   <button data-w="w1012" class="active">1012</button>
   <button data-w="w768">768</button>
   <button data-w="w480">480</button>
   <button data-w="w360">360</button>
   <button id="themeBtn">toggle theme</button>
-  <button data-view="final" class="active">final</button>
-  <button data-view="studies">studies</button>
 </div>
 <div class="frame w1012" id="frame"></div>
 <script>
-const light = matchMedia('(prefers-color-scheme: light)');
-const state = { w: 'w1012', view: 'final', dark: true };
+const state = { w: 'w1012', dark: true };
 const frame = document.getElementById('frame');
-
 function asset(name) {
-  const mode = state.dark ? 'dark' : 'light';
-  return `../generated/${mode}/${name}.svg`;
+  return `../generated/${state.dark ? 'dark' : 'light'}/${name}.svg`;
 }
-
-function renderFinal() {
-  const mode = state.dark ? 'dark' : 'light';
+function render() {
+  document.body.classList.toggle('light', !state.dark);
+  frame.className = 'frame ' + state.w;
   frame.innerHTML = `
-    <img src="${asset('hero')}" alt="hero">
-    <p style="text-align:center"><sub><code>AI systems</code> · <code>agentic systems</code> · <code>HCI</code> · <code>computational design</code> · <code>software</code> · <code>research</code></sub></p>
-    <img src="${asset('observations')}" alt="observations">
-    <h3>Links</h3>
-    <table>
-      <tr><th>#</th><th>Project</th><th>Notes</th></tr>
-      <tr><td>01</td><td>Echo</td><td>Computational text-art instrument</td></tr>
-      <tr><td>02</td><td>MuseLab</td><td>Literary workshop dossier</td></tr>
-      <tr><td>03</td><td>rag_project</td><td>Retrieval-augmented generation</td></tr>
-    </table>
-    <img src="${asset('languages')}" alt="languages">
-    <img src="${asset('signal')}" alt="signal">
-    <p class="meta"><sub>Geometry from Echo · material from ${mode === 'dark' ? 'Echo night' : 'MuseLab paper'}</sub></p>
+    <h1>Xinyue Zhang</h1>
+    <p>I design systems that move between computation, language, and human judgment.</p>
+    <p><sub>also Shirley · AI systems · agentic systems · HCI · computational design · research</sub></p>
+    <img src="${asset('orbit')}" alt="orbit" width="640">
+    <h2>Selected work</h2>
+    <div class="proj"><p><strong>01 — <a href="#">Echo</a></strong><br>
+      Computational text-art instrument: vortex, orbit, constellation, and imprint modes over analyzed language.<br>
+      <sub><code>computational design</code> · course</sub></p></div>
+    <div class="proj"><p><strong>02 — <a href="#">MuseLab</a></strong><br>
+      Literary workshop dossier for manuscript critique, semantic pulse graphs, and generative interpretation.<br>
+      <sub><code>AI systems</code> · independent</sub></p></div>
+    <div class="proj"><p><strong>03 — <a href="#">rag_project</a></strong><br>
+      Retrieval-augmented generation under real constraints — indexing, retrieval, and answer assembly.<br>
+      <sub><code>AI systems</code> · independent</sub></p></div>
+    <div class="proj"><p><strong>04 — <a href="#">food-recommender</a></strong><br>
+      Human-centered recommender work: preference, context, and the interface between taste and model output.<br>
+      <sub><code>HCI</code> · course</sub></p></div>
+    <p class="meta">Also: agentic contracting systems in professional work — described only at portfolio summary level.</p>
+    <h2>Practice</h2>
+    <p>Work moves across AI and agentic systems, human-computer interaction, computational design, software infrastructure, and research writing. Geometry above places those concerns as bands; projects appear as numbered observations rather than a catalog of cards.</p>
+    <h2>Language topology</h2>
+    <p class="meta">Authored bytes across public repositories (excluding vendored blobs).</p>
+    <img src="${asset('languages')}" alt="languages" width="640">
+    <hr>
+    <p><sub>Orbit geometry from Echo · light material from MuseLab · source github-identity-system</sub></p>
   `;
 }
-
-function renderStudies() {
-  const mode = state.dark ? 'dark' : 'light';
-  frame.innerHTML = `<div class="studies">
-    <h2>Study A — Orbit Instrument</h2>
-    <img src="../generated/studies/A-orbit-instrument-${mode}.svg">
-    <h2>Study B — Spiral Field Notes</h2>
-    <img src="../generated/studies/B-spiral-field-${mode}.svg">
-    <h2>Study C — Trajectory Folio</h2>
-    <img src="../generated/studies/C-trajectory-folio-${mode}.svg">
-  </div>`;
-}
-
-function render() {
-  document.body.classList.toggle('dark', state.dark);
-  frame.className = 'frame ' + state.w;
-  if (state.view === 'studies') renderStudies(); else renderFinal();
-}
-
 document.querySelectorAll('[data-w]').forEach(btn => btn.onclick = () => {
   document.querySelectorAll('[data-w]').forEach(b => b.classList.remove('active'));
   btn.classList.add('active'); state.w = btn.dataset.w; render();
-});
-document.querySelectorAll('[data-view]').forEach(btn => btn.onclick = () => {
-  document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active'); state.view = btn.dataset.view; render();
 });
 document.getElementById('themeBtn').onclick = () => { state.dark = !state.dark; render(); };
 render();
@@ -228,10 +213,8 @@ def main(argv: list[str]) -> None:
     cmd = argv[1] if len(argv) > 1 else "all"
     if cmd in ("studies", "all"):
         generate_studies()
-    if cmd in ("final", "all"):
+    if cmd in ("final", "all", "preview"):
         generate_final()
-    if cmd in ("preview", "all", "final", "studies"):
-        generate_preview_html()
 
 
 if __name__ == "__main__":

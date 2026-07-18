@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Copy generated profile artifacts into the public profile repository.
+"""Copy Markdown-first profile artifacts into the public profile repository.
 
 Usage:
     python3 scripts/publish_profile.py /path/to/xinyuezhang-shirley
@@ -13,6 +13,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Old poster-panel assets to remove from the public repo
+OBSOLETE = [
+    "hero-light.svg",
+    "hero-dark.svg",
+    "observations-light.svg",
+    "observations-dark.svg",
+    "signal-light.svg",
+    "signal-dark.svg",
+]
+
 
 def publish(dest: Path) -> None:
     dest = dest.resolve()
@@ -20,14 +30,10 @@ def publish(dest: Path) -> None:
     assets.mkdir(parents=True, exist_ok=True)
 
     mapping = {
-        ROOT / "generated" / "light" / "hero.svg": assets / "hero-light.svg",
-        ROOT / "generated" / "dark" / "hero.svg": assets / "hero-dark.svg",
-        ROOT / "generated" / "light" / "observations.svg": assets / "observations-light.svg",
-        ROOT / "generated" / "dark" / "observations.svg": assets / "observations-dark.svg",
+        ROOT / "generated" / "light" / "orbit.svg": assets / "orbit-light.svg",
+        ROOT / "generated" / "dark" / "orbit.svg": assets / "orbit-dark.svg",
         ROOT / "generated" / "light" / "languages.svg": assets / "languages-light.svg",
         ROOT / "generated" / "dark" / "languages.svg": assets / "languages-dark.svg",
-        ROOT / "generated" / "light" / "signal.svg": assets / "signal-light.svg",
-        ROOT / "generated" / "dark" / "signal.svg": assets / "signal-dark.svg",
         ROOT / "generated" / "PROFILE_README.md": dest / "README.md",
     }
 
@@ -37,6 +43,12 @@ def publish(dest: Path) -> None:
         out.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, out)
         print(f"copied {src.relative_to(ROOT)} → {out}")
+
+    for name in OBSOLETE:
+        p = assets / name
+        if p.exists():
+            p.unlink()
+            print(f"removed obsolete {p}")
 
 
 if __name__ == "__main__":
