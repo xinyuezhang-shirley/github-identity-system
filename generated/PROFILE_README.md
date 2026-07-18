@@ -1,7 +1,11 @@
+# Xinyue Zhang
+
+<!-- computational field guide — geometry from Echo orbit, material from MuseLab / Echo -->
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Computational field guide for Xinyue Zhang — Echo orbit of practice domains with numbered project observations" src="assets/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-light.svg">
+  <img alt="Computational field guide for Xinyue Zhang — Echo orbit of practice domains with numbered project observations" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/hero-light.svg" width="100%">
 </picture>
 
 <p align="center">
@@ -18,9 +22,9 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/observations-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/observations-light.svg">
-  <img alt="Indexed observations of selected projects — Echo, MuseLab, rag_project, and related work — with domain and provenance annotations" src="assets/observations-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-light.svg">
+  <img alt="Indexed observations of selected projects — Echo, MuseLab, rag_project, and related work — with domain and provenance annotations" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/observations-light.svg" width="100%">
 </picture>
 
 ### Links
@@ -37,17 +41,17 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
-  <img alt="Language topology from real GitHub byte shares on polar rings — TypeScript and Jupyter lead; cs340Project4 excluded as vendored" src="assets/languages-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-light.svg">
+  <img alt="Language topology from real GitHub byte shares on polar rings — TypeScript and Jupyter lead; cs340Project4 excluded as vendored" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/languages-light.svg" width="100%">
 </picture>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/signal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/signal-light.svg">
-  <img alt="Unsmoothed 53-week contribution signal from the GitHub contribution calendar" src="assets/signal-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-light.svg">
+  <img alt="Unsmoothed 53-week contribution signal from the GitHub contribution calendar" src="https://raw.githubusercontent.com/xinyuezhang-shirley/xinyuezhang-shirley/main/assets/signal-light.svg" width="100%">
 </picture>
 
 ---
