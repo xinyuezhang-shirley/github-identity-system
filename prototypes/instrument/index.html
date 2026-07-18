@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instrument — identity system prototype</title>
+<link rel="stylesheet" href="../../assets/typography/fontfaces.css">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<style>
+  .wrap{ max-width:760px; margin:0 auto; padding:clamp(2.2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 5rem; position:relative; z-index:1; }
+  .m-eyebrow{ font-family:var(--font-mono); font-size:9px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); }
+  .m-name{ font-family:var(--font-display); font-weight:500; font-size:clamp(2rem,6vw,3rem); margin:.35rem 0 .2rem; }
+  .m-sub{ font-family:var(--font-mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+  hr.idx-rule{ border:0; border-top:1px solid var(--line); margin:1.6rem 0 0; }
+  .panel-label{ font-family:var(--font-mono); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:2rem 0 .6rem; }
+  #trace{ width:100%; height:150px; display:block; }
+  #trace .baseline{ stroke:var(--line-strong); stroke-width:1; }
+  #trace .trace{ fill:none; stroke:var(--accent); stroke-width:1.6; }
+  #trace .peak-label{ font-family:var(--font-mono); font-size:9px; fill:var(--muted); }
+  .readout{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:1.2rem; }
+  .readout div{ background:var(--panel); padding:.85rem 1rem; }
+  .readout .rv{ font-family:var(--font-mono); font-size:1.4rem; color:var(--ink); }
+  .readout .rl{ font-family:var(--font-mono); font-size:.58rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-top:.2rem; }
+  .selected{ display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:.4rem; }
+  @media (max-width:600px){ .selected{ grid-template-columns:1fr; } }
+  .selected article{ border-top:1px solid var(--line); padding-top:1rem; }
+  .selected h3{ font-family:var(--font-display); font-weight:500; font-size:1.3rem; }
+  .selected p{ font-size:.85rem; color:var(--muted); margin:.35rem 0 0; line-height:1.55; }
+  details{ margin-top:2rem; border-top:1px solid var(--line); padding-top:1rem; }
+  summary{ font-family:var(--font-mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); cursor:pointer; }
+  .archive-row{ display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:.68rem; color:var(--muted); padding:.5rem 0; border-top:1px solid var(--line); }
+  .fallback{ font-family:var(--font-mono); font-size:.68rem; color:var(--muted-2); }
+  .colophon{ margin-top:2.6rem; padding-top:1.4rem; border-top:1px solid var(--line); font-family:var(--font-mono); font-size:.66rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 class="sr-only" style="position:absolute;left:-9999px;">Instrument prototype: the commit calendar rendered as a live signal trace, in the identity direction that treats the page as an unfinished scientific instrument's readout.</h1>
+
+  <p class="m-eyebrow">Calibration · Instrument (Direction B)</p>
+  <div class="m-name">Xinyue Zhang</div>
+  <p class="m-sub" id="calibrated-line">reading — loading calendar…</p>
+  <hr class="idx-rule">
+
+  <p class="panel-label">Live readout</p>
+  <svg id="trace" viewBox="0 0 860 120" role="img" aria-label="Commit signal trace, drawn live from real weekly contribution data"></svg>
+  <div class="readout" id="readout">
+    <div><div class="rv tabular">—</div><div class="rl">commits, 53 weeks</div></div>
+    <div><div class="rv tabular">—</div><div class="rl">active weeks</div></div>
+    <div><div class="rv tabular">—</div><div class="rl">peak week</div></div>
+  </div>
+
+  <p class="panel-label">Selected work</p>
+  <div class="selected">
+    <article>
+      <h3>MuseLab</h3>
+      <p>A workshop dossier for poems — agents argue about your draft instead of rewriting it. FastAPI · React · design-memory.</p>
+    </article>
+    <article>
+      <h3>Echo</h3>
+      <p>A computational text-art studio — prose becomes vortex, orbit, and ascii fields. Node · Express · D3 · Canvas.</p>
+    </article>
+  </div>
+
+  <details>
+    <summary>Archive — everything else</summary>
+    <div id="archive-list"><div class="archive-row"><span>loading…</span><span></span></div></div>
+  </details>
+
+  <div class="colophon">Cormorant Garamond · IBM Plex Mono in dark mode, Literata in light · last calibrated from assets/generated/contribution-calendar.json</div>
+</div>
+
+<script type="module">
+async function loadJSON(path) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(res.status);
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+function drawTrace(weeks) {
+  const svg = document.getElementById('trace');
+  const W = 860, H = 120;
+  const maxv = Math.max(...weeks) || 1;
+  const n = weeks.length;
+  const pts = weeks.map((v, i) => {
+    const x = (i / (n - 1)) * W;
+    const y = H - (v / maxv) * H;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const peakIdx = weeks.indexOf(maxv);
+  const peakX = (peakIdx / (n - 1)) * W;
+  svg.innerHTML = `
+    <line x1="0" y1="${H}" x2="${W}" y2="${H}" class="baseline"/>
+    <polyline class="trace" points="${pts}"/>
+    <text x="${peakX.toFixed(1)}" y="8" text-anchor="middle" class="peak-label">${maxv}</text>
+  `;
+}
+
+(async () => {
+  const cal = await loadJSON('../../assets/generated/contribution-calendar.json');
+  const repos = await loadJSON('../../assets/generated/repos.json');
+
+  if (cal) {
+    drawTrace(cal.week_totals);
+    document.getElementById('calibrated-line').textContent =
+      `reading — ${cal.active_weeks} of ${cal.weeks} weeks active, peak ${cal.peak_week}`;
+    const readout = document.getElementById('readout');
+    const total = cal.week_totals.reduce((a, b) => a + b, 0);
+    readout.innerHTML = `
+      <div><div class="rv tabular">${total}</div><div class="rl">commits, ${cal.weeks} weeks</div></div>
+      <div><div class="rv tabular">${cal.active_weeks}/${cal.weeks}</div><div class="rl">active weeks</div></div>
+      <div><div class="rv tabular">${cal.peak_week}</div><div class="rl">peak week</div></div>
+    `;
+  } else {
+    document.getElementById('calibrated-line').textContent = 'reading — could not load calendar (serve this folder over http, not file://)';
+    document.getElementById('trace').outerHTML = '<p class="fallback">Run e.g. `python3 -m http.server` from the repo root and open this page via http://localhost — fetch() of local JSON is blocked under file://.</p>';
+  }
+
+  const archiveEl = document.getElementById('archive-list');
+  if (repos) {
+    const rest = repos
+      .filter(r => !['MuseLab'].includes(r.name))
+      .sort((a, b) => new Date(b.pushedAt) - new Date(a.pushedAt))
+      .slice(0, 8);
+    archiveEl.innerHTML = rest.map(r =>
+      `<div class="archive-row"><span>${r.name}</span><span>${r.pushedAt.slice(0, 10)}</span></div>`
+    ).join('');
+  } else {
+    archiveEl.innerHTML = '<div class="archive-row"><span>could not load repos.json</span><span></span></div>';
+  }
+})();
+</script>
+</body>
+</html>
