@@ -11,3 +11,6 @@ profile-art/specimen/out/*.svg
 profile-art/artifacts/fonts/
 profile-art/artifacts/out/
 profile-art/artifacts/_*
+# Local working archive of duplicated media (read-only originals elsewhere).
+# Not committed — regenerable from source paths in PORTFOLIO_CURATION_PLAN.md.
+portfolio-archive/
