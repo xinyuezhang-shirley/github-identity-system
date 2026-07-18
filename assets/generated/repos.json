@@ -1,0 +1,660 @@
+[
+  {
+    "name": "xinyuezhang-shirley.github.io",
+    "description": "Personal website for art and projects",
+    "pushedAt": "2025-07-14T17:16:35Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 1384,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 2963,
+          "node": {
+            "name": "CSS"
+          }
+        },
+        {
+          "size": 869,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 285819,
+          "node": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "worldHappinessReport",
+    "description": "HTML/JS/CSS project with bootstrap elements, gives happiness ranking of country",
+    "pushedAt": "2023-07-16T02:36:54Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 45488,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 1162,
+          "node": {
+            "name": "CSS"
+          }
+        },
+        {
+          "size": 14759,
+          "node": {
+            "name": "JavaScript"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "gameDev--StrawberryCollector",
+    "description": "Games developed during Game Development Course",
+    "pushedAt": "2023-12-19T22:23:15Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "ShaderLab"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 11622,
+          "node": {
+            "name": "C#"
+          }
+        },
+        {
+          "size": 80492,
+          "node": {
+            "name": "ShaderLab"
+          }
+        },
+        {
+          "size": 13994,
+          "node": {
+            "name": "HLSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "gameDev--AcademicWeapon",
+    "description": null,
+    "pushedAt": "2023-12-20T00:08:27Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "C#"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 208791,
+          "node": {
+            "name": "C#"
+          }
+        },
+        {
+          "size": 80492,
+          "node": {
+            "name": "ShaderLab"
+          }
+        },
+        {
+          "size": 13994,
+          "node": {
+            "name": "HLSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "puppet",
+    "description": null,
+    "pushedAt": "2023-12-20T19:52:58Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 5085,
+          "node": {
+            "name": "Python"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "DTR",
+    "description": null,
+    "pushedAt": "2024-12-05T22:13:08Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 58980,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 160380,
+          "node": {
+            "name": "Jupyter Notebook"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "SolarTrainingTest",
+    "description": "NUSolar 2024 VSCode Training",
+    "pushedAt": "2024-10-06T19:30:38Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 464,
+          "node": {
+            "name": "Python"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "cs340Project2",
+    "description": "cs340Project2",
+    "pushedAt": "2025-02-14T06:03:34Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 27045,
+          "node": {
+            "name": "Python"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "cs340Project3",
+    "description": null,
+    "pushedAt": "2025-03-12T02:30:40Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 37631,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 537491,
+          "node": {
+            "name": "HTML"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "cs340Project4",
+    "description": null,
+    "pushedAt": "2025-03-11T21:34:00Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 28897571,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 9033,
+          "node": {
+            "name": "PowerShell"
+          }
+        },
+        {
+          "size": 8339,
+          "node": {
+            "name": "Shell"
+          }
+        },
+        {
+          "size": 1904,
+          "node": {
+            "name": "Jupyter Notebook"
+          }
+        },
+        {
+          "size": 235559,
+          "node": {
+            "name": "Cython"
+          }
+        },
+        {
+          "size": 12705,
+          "node": {
+            "name": "C"
+          }
+        },
+        {
+          "size": 105990,
+          "node": {
+            "name": "C++"
+          }
+        },
+        {
+          "size": 2886,
+          "node": {
+            "name": "Batchfile"
+          }
+        },
+        {
+          "size": 25,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 2058,
+          "node": {
+            "name": "Roff"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "yelpClone",
+    "description": null,
+    "pushedAt": "2025-07-06T23:43:26Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 12443,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 2292,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 7222,
+          "node": {
+            "name": "CSS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "shirley-unlocked-world",
+    "description": null,
+    "pushedAt": "2025-07-14T16:35:30Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 869,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 1384,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 2963,
+          "node": {
+            "name": "CSS"
+          }
+        },
+        {
+          "size": 285819,
+          "node": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "spotifyMusicAdder",
+    "description": "portfolio app inspired by codecademy react course",
+    "pushedAt": "2025-07-06T23:50:11Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 2056,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 361,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 1760,
+          "node": {
+            "name": "CSS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "pulse-robot-template-413",
+    "description": null,
+    "pushedAt": "2025-07-07T20:21:44Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 869,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 634,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 8726,
+          "node": {
+            "name": "CSS"
+          }
+        },
+        {
+          "size": 226485,
+          "node": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "aa228FinalProject",
+    "description": null,
+    "pushedAt": "2025-12-08T22:54:12Z",
+    "stargazerCount": 1,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 52602,
+          "node": {
+            "name": "Python"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "cs229FinalProject",
+    "description": null,
+    "pushedAt": "2025-12-06T03:35:44Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 29975,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 940893,
+          "node": {
+            "name": "Jupyter Notebook"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "williamest-topic-scraper-weibo",
+    "description": null,
+    "pushedAt": "2026-04-11T21:54:16Z",
+    "stargazerCount": 0,
+    "primaryLanguage": null,
+    "languages": {
+      "edges": []
+    }
+  },
+  {
+    "name": "cs278FoodRecommender",
+    "description": null,
+    "pushedAt": "2026-05-28T17:59:13Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 713,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 762,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 12235,
+          "node": {
+            "name": "CSS"
+          }
+        },
+        {
+          "size": 680101,
+          "node": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "size": 23191,
+          "node": {
+            "name": "PLpgSQL"
+          }
+        },
+        {
+          "size": 1201,
+          "node": {
+            "name": "Shell"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "MuseLab",
+    "description": null,
+    "pushedAt": "2026-06-02T23:45:56Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 114789,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 23318,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 834,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 228452,
+          "node": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "size": 1557,
+          "node": {
+            "name": "CSS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "yelpAnalysis",
+    "description": null,
+    "pushedAt": "2026-05-15T07:40:02Z",
+    "stargazerCount": 0,
+    "primaryLanguage": null,
+    "languages": {
+      "edges": []
+    }
+  },
+  {
+    "name": "cs146j-finalProject",
+    "description": null,
+    "pushedAt": "2026-06-06T03:45:36Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 150648,
+          "node": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "size": 19129,
+          "node": {
+            "name": "HTML"
+          }
+        },
+        {
+          "size": 29779,
+          "node": {
+            "name": "CSS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "rag_project",
+    "description": null,
+    "pushedAt": "2026-07-12T05:57:57Z",
+    "stargazerCount": 0,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 46036,
+          "node": {
+            "name": "Python"
+          }
+        },
+        {
+          "size": 704,
+          "node": {
+            "name": "Mako"
+          }
+        }
+      ]
+    }
+  }
+]

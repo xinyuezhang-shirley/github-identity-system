@@ -1,0 +1,69 @@
+{
+  "excluded_repos": [
+    "cs340Project4"
+  ],
+  "exclusion_reason": "vendored/bundled dependency blob, not authored code",
+  "total_bytes": 4499707,
+  "languages": [
+    {
+      "language": "TypeScript",
+      "bytes": 1706676,
+      "share_pct": 37.9
+    },
+    {
+      "language": "Jupyter Notebook",
+      "bytes": 1101273,
+      "share_pct": 24.5
+    },
+    {
+      "language": "HTML",
+      "bytes": 609759,
+      "share_pct": 13.6
+    },
+    {
+      "language": "Python",
+      "bytes": 372607,
+      "share_pct": 8.3
+    },
+    {
+      "language": "C#",
+      "bytes": 220413,
+      "share_pct": 4.9
+    },
+    {
+      "language": "JavaScript",
+      "bytes": 206544,
+      "share_pct": 4.6
+    },
+    {
+      "language": "ShaderLab",
+      "bytes": 160984,
+      "share_pct": 3.6
+    },
+    {
+      "language": "CSS",
+      "bytes": 68367,
+      "share_pct": 1.5
+    },
+    {
+      "language": "HLSL",
+      "bytes": 27988,
+      "share_pct": 0.6
+    },
+    {
+      "language": "PLpgSQL",
+      "bytes": 23191,
+      "share_pct": 0.5
+    },
+    {
+      "language": "Shell",
+      "bytes": 1201,
+      "share_pct": 0.0
+    },
+    {
+      "language": "Mako",
+      "bytes": 704,
+      "share_pct": 0.0
+    }
+  ]
+}
