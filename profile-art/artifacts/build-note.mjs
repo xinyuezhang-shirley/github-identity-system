@@ -7,7 +7,7 @@
 import { writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { fonts, layoutGlyphs } from "./lib.mjs";
+import { fonts, layoutGlyphs, svgDoc } from "./lib.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 
@@ -28,18 +28,16 @@ const inked = glyphs
   .map((g, i) => `<path class="ink" style="animation-delay:${(0.15 + i * perGlyph).toFixed(2)}s" d="${g.d}"/>`)
   .join("");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Handwritten note: ${text}">
-<style><![CDATA[
+// Base state is the resting (visible) hand; the words only play in.
+const css = `
   svg{--ink:#8b8175;}
   @media (prefers-color-scheme: dark){svg{--ink:#b7ad9f;}}
-  .ink{fill:var(--ink);opacity:0;transform-box:fill-box;transform-origin:center;
-       animation:write .7s ease-out forwards, breathe 8s ease-in-out 2.2s infinite;}
+  .ink{fill:var(--ink);opacity:1;transform-box:fill-box;transform-origin:center;
+       animation:write .7s ease-out both, breathe 8s ease-in-out 2.2s infinite;}
   @keyframes write{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-  @keyframes breathe{0%,100%{opacity:1}50%{opacity:.86}}
-]]></style>
-<g>${inked}</g>
-</svg>
-`;
+  @keyframes breathe{0%,100%{opacity:1}50%{opacity:.86}}`;
+
+const svg = svgDoc({ w: W, h: H, label: `Handwritten note: ${text}`, css, body: `<g>${inked}</g>` });
 
 const outDir = join(here, "out");
 mkdirSync(outDir, { recursive: true });

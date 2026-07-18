@@ -58,6 +58,29 @@ export function textPath(font, text, fontSize, x, y, trackingEm = 0) {
   return { d: glyphs.map((g) => g.d).join(" "), width };
 }
 
+// Every animated figure must have a static fallback: elements default to their
+// *resting* (visible) state, and animation only plays them in. This guard also
+// honors reduced-motion. If motion is ever stripped, the settled artifact shows.
+export const REDUCED_MOTION =
+  "@media(prefers-reduced-motion:reduce){*{animation:none!important}}";
+
+export function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// Wrap body markup in a valid, GitHub-<img>-safe SVG: CDATA style (so `<`/`&`
+// in CSS never break XML) plus the reduced-motion guard.
+export function svgDoc({ w, h, label, css = "", body }) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(label)}">
+<style><![CDATA[
+${css}
+${REDUCED_MOTION}
+]]></style>
+${body}
+</svg>
+`;
+}
+
 export function measure(font, text, fontSize, trackingEm = 0) {
   if (!trackingEm) return round(font.getAdvanceWidth(text, fontSize));
   const scale = fontSize / font.unitsPerEm;

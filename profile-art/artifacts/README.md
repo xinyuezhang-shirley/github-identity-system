@@ -45,9 +45,25 @@ audited the way GitHub renders them.
 
 ## Figures
 
+| File | Role | Motion |
+| --- | --- | --- |
+| `build-header.mjs` → `wordmark-{light,dark}.svg` | Identity wordmark inside the `<h1>` (paired) | writes in |
+| `build-plate.mjs` → `plate-01.svg` | Plate 01 masthead for the specimen | draw · emerge · breathe |
+| `build-plate.mjs` → `plate-02.svg` | Plate 02 folio opening Selected work | static |
+| `build-note.mjs` → `note-field.svg` | Handwritten field-note under the caption | writes in · breathe |
+| `build-marks.mjs` → `mark-{echo,muselab,differ,rag}.svg` | Inline project sigils | static |
+| `build-closing.mjs` → `closing.svg` | Colophon near the portfolio link | settle · pulse |
+
+Helpers & checks:
+
 | File | Role |
 | --- | --- |
-| `build-plate.mjs` → `plate-01.svg` | Plate 01 masthead for the specimen |
-| `build-note.mjs` → `note-field.svg` | Handwritten field-note (writes in) |
-| `lib.mjs` | Font loading + text→outline layout helpers |
-| `preview.mjs` | Two-theme `<img>`-context preview |
+| `lib.mjs` | Font loading, text→outline layout, `svgDoc` (CDATA + reduced-motion guard) |
+| `preview.mjs` | Two-theme `<img>`-context preview of one asset |
+| `gallery.mjs` | Two-theme preview of the whole asset family |
+| `verify-readme.mjs` | Full-README reconstruction at desktop + mobile widths |
+
+Animation budget: four animated elements across the profile (wordmark, Plate 01,
+field-note, closing). Every animated asset defaults to its resting/visible state
+and only plays in, so it survives when motion is stripped (reduced-motion or a
+renderer that ignores SVG animation). The specimen and marks are static.

@@ -114,8 +114,10 @@ function buildSvg(theme) {
     })
     .join("\n");
 
+  // Transparent ground: the field sits directly on GitHub's page (paper or ink)
+  // like the other editorial assets. Ink tokens stay theme-specific and are
+  // paired via <picture>, so contrast is correct on both themes.
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${viewW}" height="${viewH}" viewBox="${viewX} ${viewY} ${viewW} ${viewH}">
-<rect x="${viewX}" y="${viewY}" width="${viewW}" height="${viewH}" fill="${t.bg}"/>
 <g>${edges}</g>
 <g>${nodes}</g>
 </svg>`;
@@ -142,7 +144,7 @@ for (const theme of ["dark", "light"]) {
   writeFileSync(join(outDir, `specimen-${theme}.svg`), svg);
 
   const html = `<!doctype html><html><head><meta charset="utf-8">${fontLink}<style>
-    html,body{margin:0;padding:0;background:${THEMES[theme].bg}}
+    html,body{margin:0;padding:0;background:transparent}
     #stage{width:${viewW}px;height:${viewH}px}
     svg{display:block}
   </style></head><body><div id="stage">${svg}</div></body></html>`;
@@ -154,11 +156,14 @@ for (const theme of ["dark", "light"]) {
     await document.fonts.ready;
   });
   const stage = await page.$("#stage");
-  const raw = await stage.screenshot();
+  const raw = await stage.screenshot({ omitBackground: true });
 
+  // Full RGBA (not palette): the field is anti-aliased type and faint edges over
+  // transparency, which need a true alpha channel to composite cleanly on any
+  // GitHub background.
   const pngPath = join(outDir, `specimen-${theme}.png`);
   await sharp(raw)
-    .png({ palette: true, quality: 100, effort: 10, compressionLevel: 9 })
+    .png({ quality: 100, effort: 10, compressionLevel: 9 })
     .toFile(pngPath);
 
   copyFileSync(pngPath, join(profileAssets, `specimen-${theme}.png`));
