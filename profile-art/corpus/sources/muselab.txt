@@ -1,0 +1,9 @@
+I wanted better feedback on my own poetry.
+Most AI writing tools gave me the same thing: vague praise, generic craft advice, and a chat box that treated a poem like a support ticket. They could count my repetitions. They rarely told me what the draft was about.
+MuseLab is my attempt to fix that—for myself and for anyone else who writes in short forms. You submit a draft. The backend reads it through several lenses (structure, emotion, metaphor, development, references). The UI returns a dossier: folio tabs you flip through, not a conversation you scroll forever.
+What makes it different: interpretation over generation. The app is not trying to rewrite your poem. It tries to argue about it—grounded in your lines—and leave you with something you can revise from.
+Dossier, not chat. A poem isn't a thread. I wanted the feeling of a workshop packet—sheets you move through at your own pace.
+Interpretation, not replacement. Agents name mechanisms in your language so you can revise. I explicitly did not want here's my version of your poem.
+Hybrid analysis, not LLM-only. Deterministic features, an emotion classifier, and reference retrieval run before the language-model agents. That grounding keeps feedback from floating off into generic advice.
+Two agent systems, kept separate. Poetry agents critique your text. Builder agents critique this repo. Mixing those prompts would blur the product.
+Humans stay in the loop on builder output. Builder agents write markdown reports. They do not merge code. I review, edit, reject, then implement.

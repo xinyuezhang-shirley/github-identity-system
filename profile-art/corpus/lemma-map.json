@@ -1,0 +1,15 @@
+{
+  "_note": "Frozen per production-spec Part 1.5. Minimal deterministic singular folding only. No stemmer.",
+  "map": {
+    "systems": "system",
+    "models": "model",
+    "agents": "agent",
+    "words": "word",
+    "humans": "human",
+    "interpretations": "interpretation",
+    "contexts": "context",
+    "poems": "poem",
+    "metaphors": "metaphor",
+    "questions": "question"
+  }
+}

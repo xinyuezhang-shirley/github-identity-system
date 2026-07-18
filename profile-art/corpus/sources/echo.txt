@@ -1,0 +1,10 @@
+A minimalist text art studio where users paste prose and transform it into interactive word-based visualizations. Saved pieces persist in a local SQLite database through Echo's Express API.
+Words are humanity's primary mechanism for understanding one another. Language carries emotion, memory, identity, intention. Yet modern communication increasingly prioritizes speed over reflection — compressing meaning into fragments, captions, messages, and signals. In trying to communicate faster, we often lose the emotional weight that language once carried.
+Echo was created as a response to that loss.
+Echo transforms writing into living visual systems that continue evolving after the sentence itself ends. Instead of treating text as static information, Echo interprets language as movement: words cluster, drift, repeat, orbit, fragment, and reform over time.
+Each form gives language a different kind of afterlife.
+Maps relationships between connected ideas and recurring language patterns.
+Disperses words into atmospheric fields that move like memory.
+Compresses language into typographic residue and monochrome traces.
+Pulls repeated language into motion, recurrence, and collapse.
+Organizes words around semantic anchors and emotional weight.

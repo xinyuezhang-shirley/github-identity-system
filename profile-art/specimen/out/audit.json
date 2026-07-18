@@ -1,0 +1,360 @@
+{
+  "totalUnits": 59,
+  "distinctTerms": 397,
+  "top30": [
+    {
+      "rank": 0,
+      "word": "system",
+      "weight": 10
+    },
+    {
+      "rank": 1,
+      "word": "language",
+      "weight": 9
+    },
+    {
+      "rank": 2,
+      "word": "agent",
+      "weight": 8
+    },
+    {
+      "rank": 3,
+      "word": "data",
+      "weight": 6
+    },
+    {
+      "rank": 4,
+      "word": "experience",
+      "weight": 4
+    },
+    {
+      "rank": 5,
+      "word": "poem",
+      "weight": 4
+    },
+    {
+      "rank": 6,
+      "word": "visualizations",
+      "weight": 4
+    },
+    {
+      "rank": 7,
+      "word": "word",
+      "weight": 4
+    },
+    {
+      "rank": 8,
+      "word": "builder",
+      "weight": 3
+    },
+    {
+      "rank": 9,
+      "word": "design",
+      "weight": 3
+    },
+    {
+      "rank": 10,
+      "word": "different",
+      "weight": 3
+    },
+    {
+      "rank": 11,
+      "word": "echo",
+      "weight": 3
+    },
+    {
+      "rank": 12,
+      "word": "emotion",
+      "weight": 3
+    },
+    {
+      "rank": 13,
+      "word": "generation",
+      "weight": 3
+    },
+    {
+      "rank": 14,
+      "word": "human",
+      "weight": 3
+    },
+    {
+      "rank": 15,
+      "word": "move",
+      "weight": 3
+    },
+    {
+      "rank": 16,
+      "word": "reference",
+      "weight": 3
+    },
+    {
+      "rank": 17,
+      "word": "text",
+      "weight": 3
+    },
+    {
+      "rank": 18,
+      "word": "two",
+      "weight": 3
+    },
+    {
+      "rank": 19,
+      "word": "accountable",
+      "weight": 2
+    },
+    {
+      "rank": 20,
+      "word": "advice",
+      "weight": 2
+    },
+    {
+      "rank": 21,
+      "word": "analysis",
+      "weight": 2
+    },
+    {
+      "rank": 22,
+      "word": "backend",
+      "weight": 2
+    },
+    {
+      "rank": 23,
+      "word": "bugs",
+      "weight": 2
+    },
+    {
+      "rank": 24,
+      "word": "case",
+      "weight": 2
+    },
+    {
+      "rank": 25,
+      "word": "chat",
+      "weight": 2
+    },
+    {
+      "rank": 26,
+      "word": "chi",
+      "weight": 2
+    },
+    {
+      "rank": 27,
+      "word": "code",
+      "weight": 2
+    },
+    {
+      "rank": 28,
+      "word": "concept",
+      "weight": 2
+    },
+    {
+      "rank": 29,
+      "word": "context-aware",
+      "weight": 2
+    }
+  ],
+  "centerWord": "system",
+  "edgeCount": 40,
+  "edges": [
+    {
+      "source": "data",
+      "target": "system",
+      "weight": 4
+    },
+    {
+      "source": "agent",
+      "target": "system",
+      "weight": 2
+    },
+    {
+      "source": "design",
+      "target": "system",
+      "weight": 2
+    },
+    {
+      "source": "agent",
+      "target": "builder",
+      "weight": 2
+    },
+    {
+      "source": "generation",
+      "target": "system",
+      "weight": 2
+    },
+    {
+      "source": "reference",
+      "target": "system",
+      "weight": 2
+    },
+    {
+      "source": "system",
+      "target": "two",
+      "weight": 2
+    },
+    {
+      "source": "data",
+      "target": "reference",
+      "weight": 2
+    },
+    {
+      "source": "design",
+      "target": "human",
+      "weight": 2
+    },
+    {
+      "source": "context-aware",
+      "target": "design",
+      "weight": 2
+    },
+    {
+      "source": "case",
+      "target": "chi",
+      "weight": 2
+    },
+    {
+      "source": "language",
+      "target": "system",
+      "weight": 1
+    },
+    {
+      "source": "agent",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "system",
+      "target": "visualizations",
+      "weight": 1
+    },
+    {
+      "source": "language",
+      "target": "word",
+      "weight": 1
+    },
+    {
+      "source": "data",
+      "target": "visualizations",
+      "weight": 1
+    },
+    {
+      "source": "design",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "experience",
+      "target": "visualizations",
+      "weight": 1
+    },
+    {
+      "source": "different",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "echo",
+      "target": "system",
+      "weight": 1
+    },
+    {
+      "source": "data",
+      "target": "design",
+      "weight": 1
+    },
+    {
+      "source": "echo",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "design",
+      "target": "experience",
+      "weight": 1
+    },
+    {
+      "source": "emotion",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "agent",
+      "target": "emotion",
+      "weight": 1
+    },
+    {
+      "source": "different",
+      "target": "experience",
+      "weight": 1
+    },
+    {
+      "source": "human",
+      "target": "system",
+      "weight": 1
+    },
+    {
+      "source": "human",
+      "target": "language",
+      "weight": 1
+    },
+    {
+      "source": "move",
+      "target": "system",
+      "weight": 1
+    },
+    {
+      "source": "language",
+      "target": "move",
+      "weight": 1
+    },
+    {
+      "source": "agent",
+      "target": "reference",
+      "weight": 1
+    },
+    {
+      "source": "echo",
+      "target": "word",
+      "weight": 1
+    },
+    {
+      "source": "experience",
+      "target": "human",
+      "weight": 1
+    },
+    {
+      "source": "language",
+      "target": "text",
+      "weight": 1
+    },
+    {
+      "source": "agent",
+      "target": "text",
+      "weight": 1
+    },
+    {
+      "source": "design",
+      "target": "different",
+      "weight": 1
+    },
+    {
+      "source": "agent",
+      "target": "two",
+      "weight": 1
+    },
+    {
+      "source": "analysis",
+      "target": "system",
+      "weight": 1
+    },
+    {
+      "source": "data",
+      "target": "two",
+      "weight": 1
+    },
+    {
+      "source": "backend",
+      "target": "system",
+      "weight": 1
+    }
+  ]
+}

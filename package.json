@@ -1,0 +1,35 @@
+{
+  "name": "github-identity-system",
+  "version": "1.0.0",
+  "description": "Development workspace for Xinyue Zhang’s generative identity. Public surface: [`xinyuezhang-shirley/xinyuezhang-shirley`](https://github.com/xinyuezhang-shirley/xinyuezhang-shirley).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "art:build": "node profile-art/build.mjs",
+    "art:export": "node profile-art/export.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinyuezhang-shirley/github-identity-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/xinyuezhang-shirley/github-identity-system/issues"
+  },
+  "homepage": "https://github.com/xinyuezhang-shirley/github-identity-system#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "playwright": "^1.61.1"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "d3-quadtree": "^3.0.1",
+    "sharp": "^0.35.3"
+  }
+}

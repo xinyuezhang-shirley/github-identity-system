@@ -1,0 +1,37 @@
+{
+  "_note": "Frozen per production-spec Part 1.4: a standard English stop list defined by category (articles, pronouns, prepositions, auxiliaries, conjunctions, common adverbs) + domain-generic build filler. Words in _notRemoved are deliberately absent so they may reach the center if the data elects them. Only function words appear here; no content word is removed.",
+  "_notRemoved": [
+    "system", "systems", "meaning", "language", "human", "interpretation",
+    "model", "judgment", "context", "computation", "computational", "text",
+    "workshop", "evidence", "experience"
+  ],
+  "standard": [
+    "a", "an", "the",
+    "and", "but", "or", "nor", "so", "yet", "if", "because", "as", "than",
+    "that", "which", "who", "whom", "whose", "what", "while", "whether",
+    "i", "me", "my", "myself", "we", "our", "ours", "you", "your", "yours",
+    "he", "him", "his", "she", "her", "hers", "it", "its", "they", "them",
+    "their", "theirs", "this", "these", "those",
+    "something", "anything", "everything", "nothing",
+    "someone", "anyone", "everyone", "somebody", "anybody", "nobody",
+    "another", "each", "every", "either", "neither", "both", "few", "many",
+    "much", "more", "most", "other", "some", "such", "any", "all", "several",
+    "am", "is", "are", "was", "were", "be", "been", "being",
+    "have", "has", "had", "having", "do", "does", "did", "doing",
+    "can", "could", "will", "would", "shall", "should", "may", "might",
+    "must", "of", "at", "by", "for", "with", "about", "against", "between",
+    "into", "through", "during", "before", "after", "above", "below",
+    "to", "from", "up", "down", "in", "out", "on", "off", "over", "under",
+    "within", "without", "around", "across", "among", "toward", "towards",
+    "upon", "onto", "here", "there", "when", "where", "why", "how",
+    "again", "once", "then", "also", "not", "no", "only", "own", "same",
+    "too", "very", "just", "now", "still", "even", "often", "usually",
+    "actually", "really", "always", "never", "rather", "almost", "perhaps",
+    "maybe", "however", "therefore", "instead", "else", "simply", "like"
+  ],
+  "filler": [
+    "project", "projects", "built", "build", "building", "using", "use",
+    "used", "made", "make", "thing", "things", "work", "works", "lot",
+    "kind", "way", "ways"
+  ]
+}

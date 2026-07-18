@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "phase": "0 — corpus freeze",
+    "spec": "profile-production-spec.md Part 1",
+    "sourceOrder": [
+      "echo",
+      "muselab",
+      "differ",
+      "rag",
+      "practice"
+    ],
+    "unitCount": 59,
+    "unitsPerSource": {
+      "echo": 15,
+      "muselab": 28,
+      "differ": 9,
+      "rag": 6,
+      "practice": 1
+    },
+    "note": "Sentence units only. Tokens/weights/edges are computed in Phase 2."
+  },
+  "units": [
+    {
+      "id": "echo-000",
+      "source": "echo",
+      "text": "A minimalist text art studio where users paste prose and transform it into interactive word-based visualizations."
+    },
+    {
+      "id": "echo-001",
+      "source": "echo",
+      "text": "Saved pieces persist in a local SQLite database through Echo's Express API."
+    },
+    {
+      "id": "echo-002",
+      "source": "echo",
+      "text": "Words are humanity's primary mechanism for understanding one another."
+    },
+    {
+      "id": "echo-003",
+      "source": "echo",
+      "text": "Language carries emotion, memory, identity, intention."
+    },
+    {
+      "id": "echo-004",
+      "source": "echo",
+      "text": "Yet modern communication increasingly prioritizes speed over reflection — compressing meaning into fragments, captions, messages, and signals."
+    },
+    {
+      "id": "echo-005",
+      "source": "echo",
+      "text": "In trying to communicate faster, we often lose the emotional weight that language once carried."
+    },
+    {
+      "id": "echo-006",
+      "source": "echo",
+      "text": "Echo was created as a response to that loss."
+    },
+    {
+      "id": "echo-007",
+      "source": "echo",
+      "text": "Echo transforms writing into living visual systems that continue evolving after the sentence itself ends."
+    },
+    {
+      "id": "echo-008",
+      "source": "echo",
+      "text": "Instead of treating text as static information, Echo interprets language as movement: words cluster, drift, repeat, orbit, fragment, and reform over time."
+    },
+    {
+      "id": "echo-009",
+      "source": "echo",
+      "text": "Each form gives language a different kind of afterlife."
+    },
+    {
+      "id": "echo-010",
+      "source": "echo",
+      "text": "Maps relationships between connected ideas and recurring language patterns."
+    },
+    {
+      "id": "echo-011",
+      "source": "echo",
+      "text": "Disperses words into atmospheric fields that move like memory."
+    },
+    {
+      "id": "echo-012",
+      "source": "echo",
+      "text": "Compresses language into typographic residue and monochrome traces."
+    },
+    {
+      "id": "echo-013",
+      "source": "echo",
+      "text": "Pulls repeated language into motion, recurrence, and collapse."
+    },
+    {
+      "id": "echo-014",
+      "source": "echo",
+      "text": "Organizes words around semantic anchors and emotional weight."
+    },
+    {
+      "id": "muselab-015",
+      "source": "muselab",
+      "text": "I wanted better feedback on my own poetry."
+    },
+    {
+      "id": "muselab-016",
+      "source": "muselab",
+      "text": "Most AI writing tools gave me the same thing: vague praise, generic craft advice, and a chat box that treated a poem like a support ticket."
+    },
+    {
+      "id": "muselab-017",
+      "source": "muselab",
+      "text": "They could count my repetitions."
+    },
+    {
+      "id": "muselab-018",
+      "source": "muselab",
+      "text": "They rarely told me what the draft was about."
+    },
+    {
+      "id": "muselab-019",
+      "source": "muselab",
+      "text": "MuseLab is my attempt to fix that—for myself and for anyone else who writes in short forms."
+    },
+    {
+      "id": "muselab-020",
+      "source": "muselab",
+      "text": "You submit a draft."
+    },
+    {
+      "id": "muselab-021",
+      "source": "muselab",
+      "text": "The backend reads it through several lenses (structure, emotion, metaphor, development, references)."
+    },
+    {
+      "id": "muselab-022",
+      "source": "muselab",
+      "text": "The UI returns a dossier: folio tabs you flip through, not a conversation you scroll forever."
+    },
+    {
+      "id": "muselab-023",
+      "source": "muselab",
+      "text": "What makes it different: interpretation over generation."
+    },
+    {
+      "id": "muselab-024",
+      "source": "muselab",
+      "text": "The app is not trying to rewrite your poem."
+    },
+    {
+      "id": "muselab-025",
+      "source": "muselab",
+      "text": "It tries to argue about it—grounded in your lines—and leave you with something you can revise from."
+    },
+    {
+      "id": "muselab-026",
+      "source": "muselab",
+      "text": "Dossier, not chat."
+    },
+    {
+      "id": "muselab-027",
+      "source": "muselab",
+      "text": "A poem isn't a thread."
+    },
+    {
+      "id": "muselab-028",
+      "source": "muselab",
+      "text": "I wanted the feeling of a workshop packet—sheets you move through at your own pace."
+    },
+    {
+      "id": "muselab-029",
+      "source": "muselab",
+      "text": "Interpretation, not replacement."
+    },
+    {
+      "id": "muselab-030",
+      "source": "muselab",
+      "text": "Agents name mechanisms in your language so you can revise."
+    },
+    {
+      "id": "muselab-031",
+      "source": "muselab",
+      "text": "I explicitly did not want here's my version of your poem."
+    },
+    {
+      "id": "muselab-032",
+      "source": "muselab",
+      "text": "Hybrid analysis, not LLM-only."
+    },
+    {
+      "id": "muselab-033",
+      "source": "muselab",
+      "text": "Deterministic features, an emotion classifier, and reference retrieval run before the language-model agents."
+    },
+    {
+      "id": "muselab-034",
+      "source": "muselab",
+      "text": "That grounding keeps feedback from floating off into generic advice."
+    },
+    {
+      "id": "muselab-035",
+      "source": "muselab",
+      "text": "Two agent systems, kept separate."
+    },
+    {
+      "id": "muselab-036",
+      "source": "muselab",
+      "text": "Poetry agents critique your text."
+    },
+    {
+      "id": "muselab-037",
+      "source": "muselab",
+      "text": "Builder agents critique this repo."
+    },
+    {
+      "id": "muselab-038",
+      "source": "muselab",
+      "text": "Mixing those prompts would blur the product."
+    },
+    {
+      "id": "muselab-039",
+      "source": "muselab",
+      "text": "Humans stay in the loop on builder output."
+    },
+    {
+      "id": "muselab-040",
+      "source": "muselab",
+      "text": "Builder agents write markdown reports."
+    },
+    {
+      "id": "muselab-041",
+      "source": "muselab",
+      "text": "They do not merge code."
+    },
+    {
+      "id": "muselab-042",
+      "source": "muselab",
+      "text": "I review, edit, reject, then implement."
+    },
+    {
+      "id": "differ-043",
+      "source": "differ",
+      "text": "Differ is a platform for reasoning about contextual differences in human experience design — built on the idea that the same context-aware experience can mean something different depending on who encounters it and where."
+    },
+    {
+      "id": "differ-044",
+      "source": "differ",
+      "text": "It takes a machine-interpretable definition of an experience and returns a set of visualizations that surface where that experience might break down for particular populations or settings, before a designer ships it."
+    },
+    {
+      "id": "differ-045",
+      "source": "differ",
+      "text": "Four core computational abstractions: concept expressions, accountable perspectives, issues of concern, and visualizations."
+    },
+    {
+      "id": "differ-046",
+      "source": "differ",
+      "text": "Accountable perspectives capture meaning differences across geography (urban/rural, state, neighborhood), demographics (age, budget, wheelchair accessibility), and setting (time of day)."
+    },
+    {
+      "id": "differ-047",
+      "source": "differ",
+      "text": "Issue functions score a given perspective for prevalence, conceptual fit, popularity, safety, and affordability."
+    },
+    {
+      "id": "differ-048",
+      "source": "differ",
+      "text": "Reference systems combine Yelp and Foursquare data, public crime datasets, neighborhood data, and census data; visualizations are generated with geopandas and Plotly."
+    },
+    {
+      "id": "differ-049",
+      "source": "differ",
+      "text": "First author on the CHI 2026 submission presenting Differ alongside real-world case studies."
+    },
+    {
+      "id": "differ-050",
+      "source": "differ",
+      "text": "The project grew out of Northwestern's Design, Technology, and Research course inside the Delta Lab, and turned into something I kept building for almost two years: a lightweight data analysis framework that connects how a person expresses a concept to how a machine interprets it, aimed at surfacing actionable insight for designers working on inclusive, context-aware systems."
+    },
+    {
+      "id": "differ-051",
+      "source": "differ",
+      "text": "The case studies in the CHI submission use real-world reference systems rather than synthetic data, which is most of why the project took as long as it did — a difference that only shows up across actual Chicago neighborhoods is a much harder thing to render responsibly than one that shows up in a toy dataset."
+    },
+    {
+      "id": "rag-052",
+      "source": "rag",
+      "text": "Routing queries through a multi-agent Langflow system wrapped around an internal retrieval-augmented generation pipeline."
+    },
+    {
+      "id": "rag-053",
+      "source": "rag",
+      "text": "I worked inside an internal AI platform built around retrieval-augmented generation — the kind of system meant to let people ask plain questions of dense, hierarchical document sets and get back something trustworthy."
+    },
+    {
+      "id": "rag-054",
+      "source": "rag",
+      "text": "My main contribution was a multi-agent system in Langflow that sat in front of the RAG pipeline, routing each incoming query between a retrieval agent and a conversational agent depending on what the question actually needed, with translation and response post-processing layered on top."
+    },
+    {
+      "id": "rag-055",
+      "source": "rag",
+      "text": "The rest of the internship split between two things that don't usually share a sentence: evaluation logic and rendering bugs."
+    },
+    {
+      "id": "rag-056",
+      "source": "rag",
+      "text": "I wrote backend evaluation code for the RAG prototypes to check whether the system was retrieving the right documents and producing answers worth trusting, and separately tracked down full-stack bugs where deeply nested, hierarchical data was breaking the frontend's rendering logic and causing cascading UI failures."
+    },
+    {
+      "id": "rag-057",
+      "source": "rag",
+      "text": "Fixing both halves taught the same lesson twice: what makes an AI feature feel reliable usually has nothing to do with the model."
+    },
+    {
+      "id": "practice-058",
+      "source": "practice",
+      "text": "I design systems that move between computation, language, and human judgment."
+    }
+  ]
+}
