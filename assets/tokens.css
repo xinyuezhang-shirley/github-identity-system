@@ -1,0 +1,114 @@
+/* ============================================================
+   Shared design tokens - two studios, not one inverted palette.
+
+   LIGHT = MuseLab's real tokens, verbatim from
+     MuseLab/frontend/src/index.css (@theme block).
+   DARK  = Echo's real tokens, verbatim from
+     echo/frontend/styles.css (:root, its default/night state).
+
+   Every prototype under prototypes/ links this file so a change
+   to the calibration happens once, in one place, for the whole
+   project - not once per prototype.
+   ============================================================ */
+
+:root {
+  --paper: #f4efe6;
+  --paper-hi: #faf6ef;
+  --paper-mid: #ebe3d4;
+  --paper-lo: #e8dfd2;
+  --panel: #fffcf7;
+  --ink: #1c1917;
+  --ink-soft: #332e29;
+  --muted: #57534e;
+  --muted-2: #8b8478;
+  --line: #dfd4c8;
+  --line-strong: #c9bca9;
+  --accent: #8b6914;
+  --accent-soft: #b08a3e;
+  --grain-op: 0.05;
+  --grain-op-site: 0.02;
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-running: 'Literata', Georgia, ui-serif, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
+  --font-hand: 'Caveat', cursive;
+  --studio-label: 'MuseLab — paper, editorial, daylight';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #000000;
+    --paper-hi: #000000;
+    --paper-mid: #000000;
+    --paper-lo: #000000;
+    --panel: rgba(255, 255, 255, 0.05);
+    --ink: #f5f5f5;
+    --ink-soft: #e7e7e7;
+    --muted: #888888;
+    --muted-2: #6b6b6b;
+    --line: rgba(255, 255, 255, 0.2);
+    --line-strong: rgba(255, 255, 255, 0.32);
+    --accent: #8f8265;
+    --accent-soft: #726a56;
+    --grain-op: 0;
+    --grain-op-site: 0;
+    --font-running: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
+    --studio-label: 'Echo — instrument, computation, night';
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #000000; --paper-hi: #000000; --paper-mid: #000000; --paper-lo: #000000;
+  --panel: rgba(255, 255, 255, 0.05); --ink: #f5f5f5; --ink-soft: #e7e7e7;
+  --muted: #888888; --muted-2: #6b6b6b; --line: rgba(255, 255, 255, 0.2); --line-strong: rgba(255, 255, 255, 0.32);
+  --accent: #8f8265; --accent-soft: #726a56; --grain-op: 0; --grain-op-site: 0;
+  --font-running: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
+  --studio-label: 'Echo — instrument, computation, night';
+}
+:root[data-theme="light"] {
+  --paper: #f4efe6; --paper-hi: #faf6ef; --paper-mid: #ebe3d4; --paper-lo: #e8dfd2;
+  --panel: #fffcf7; --ink: #1c1917; --ink-soft: #332e29;
+  --muted: #57534e; --muted-2: #8b8478; --line: #dfd4c8; --line-strong: #c9bca9;
+  --accent: #8b6914; --accent-soft: #b08a3e; --grain-op: 0.05; --grain-op-site: 0.02;
+  --font-running: 'Literata', Georgia, ui-serif, serif;
+  --studio-label: 'MuseLab — paper, editorial, daylight';
+}
+
+*{ box-sizing: border-box; }
+html, body{ margin: 0; padding: 0; }
+body{
+  background:
+    radial-gradient(ellipse 78% 40% at 22% -4%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 56%),
+    linear-gradient(171deg, var(--paper-hi) 0%, var(--paper-mid) 48%, var(--paper-lo) 100%);
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-running);
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (prefers-color-scheme: dark){ body{ background-image: none; } }
+:root[data-theme="dark"] body{ background-image: none; }
+:root[data-theme="light"] body{
+  background-image:
+    radial-gradient(ellipse 78% 40% at 22% -4%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 56%),
+    linear-gradient(171deg, var(--paper-hi) 0%, var(--paper-mid) 48%, var(--paper-lo) 100%);
+}
+
+::selection{ background: color-mix(in srgb, var(--accent) 30%, transparent); }
+hr.hair{ border: 0; border-top: 1px solid var(--line); margin: 0; }
+code, .mono{ font-family: var(--font-mono); }
+.tabular{ font-variant-numeric: tabular-nums; }
+h1, h2, h3{ font-family: var(--font-display); font-weight: 500; margin: 0; text-wrap: balance; }
+.eyebrow{
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .32em; text-transform: uppercase;
+  color: var(--muted); display: flex; align-items: baseline; gap: .7rem;
+}
+.eyebrow .n{ color: var(--accent); }
+.grain-veil{
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: var(--grain-op-site);
+  mix-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
