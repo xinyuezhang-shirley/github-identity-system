@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folio — identity system prototype</title>
+<link rel="stylesheet" href="../../assets/typography/fontfaces.css">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<style>
+  .wrap{ max-width:640px; margin:0 auto; padding:clamp(2.2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 5rem; position:relative; z-index:1; }
+  .m-eyebrow{ font-family:var(--font-mono); font-size:9px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); }
+  .m-name{ font-family:var(--font-display); font-weight:500; font-size:clamp(2rem,6vw,3rem); margin:.35rem 0 .2rem; }
+  .m-role{ font-style:italic; color:var(--muted); font-size:.92rem; }
+  .idx-rule{ border:0; border-top:1px solid var(--line); margin:1.6rem 0 0; }
+  .idx-row{ display:flex; gap:1.1rem; align-items:baseline; padding:1.1rem 0; border-bottom:1px solid var(--line); }
+  .idx-row .idx-num{ font-family:var(--font-mono); font-size:.78rem; color:var(--accent); width:2.4rem; flex-shrink:0; }
+  .idx-row .idx-body{ flex:1; min-width:0; }
+  .idx-row .idx-name a{ font-family:var(--font-display); font-weight:500; font-size:1.4rem; color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; }
+  .idx-row .idx-name a:hover{ border-bottom-color:var(--accent); }
+  .idx-row .idx-desc{ font-size:.88rem; color:var(--muted); margin-top:.2rem; line-height:1.55; }
+  .idx-row .idx-tags{ font-family:var(--font-mono); font-size:.62rem; letter-spacing:.08em; color:var(--muted-2); margin-top:.5rem; text-transform:uppercase; }
+  .idx-row .idx-meta{ font-family:var(--font-mono); font-size:.6rem; color:var(--muted-2); margin-top:.3rem; }
+  .colophon{ margin-top:2.6rem; padding-top:1.4rem; border-top:1px solid var(--line); font-family:var(--font-mono); font-size:.66rem; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem; }
+  .note{ margin-top:1.6rem; font-size:.78rem; color:var(--muted-2); font-style:italic; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 class="sr-only" style="position:absolute;left:-9999px;">Folio prototype: a numbered dossier index of real, chronologically ordered repositories, in the identity direction that most directly extends MuseLab's own folio metaphor.</h1>
+
+  <p class="m-eyebrow">Dossier · Folio System (Direction C)</p>
+  <div class="m-name">Xinyue Zhang</div>
+  <p class="m-role">builds interpretation, not dashboards</p>
+  <hr class="idx-rule">
+
+  <div class="idx-row">
+    <div class="idx-num">I</div>
+    <div class="idx-body">
+      <div class="idx-name"><a href="https://github.com/xinyuezhang-shirley/MuseLab" target="_blank" rel="noopener">MuseLab</a></div>
+      <div class="idx-desc">A workshop dossier for poems — agents argue about your draft instead of rewriting it.</div>
+      <div class="idx-tags">FastAPI · React · design-memory</div>
+      <div class="idx-meta">pushed 2026-06-02 · github.com/xinyuezhang-shirley/MuseLab</div>
+    </div>
+  </div>
+
+  <div class="idx-row">
+    <div class="idx-num">II</div>
+    <div class="idx-body">
+      <div class="idx-name"><a href="https://github.com/cs146j-26sp/echo" target="_blank" rel="noopener">Echo</a></div>
+      <div class="idx-desc">A computational text-art studio — prose becomes vortex, orbit, and ascii fields.</div>
+      <div class="idx-tags">Node · Express · D3 · Canvas</div>
+      <div class="idx-meta">course repository · github.com/cs146j-26sp/echo</div>
+    </div>
+  </div>
+
+  <div class="idx-row" style="border-bottom:none;">
+    <div class="idx-num">III</div>
+    <div class="idx-body">
+      <div class="idx-name"><a href="https://github.com/xinyuezhang-shirley/rag_project" target="_blank" rel="noopener">rag_project</a></div>
+      <div class="idx-desc">Most recent entry in the ledger — active as of last week.</div>
+      <div class="idx-tags">Python</div>
+      <div class="idx-meta">pushed 2026-07-12 · github.com/xinyuezhang-shirley/rag_project</div>
+    </div>
+  </div>
+
+  <p class="note">Ordering is chronological by <code>pushedAt</code>, from <code>assets/generated/repos.json</code> — the roman numerals only earn their place because that ordering is real and stated, not because these three felt like "the top three."</p>
+
+  <div class="colophon">
+    <span>Cormorant Garamond · Literata · IBM Plex Mono</span>
+    <span>Folio System — see docs/identity-directions.md §C</span>
+  </div>
+</div>
+</body>
+</html>
