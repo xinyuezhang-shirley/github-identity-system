@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topology — identity system prototype</title>
+<link rel="stylesheet" href="../../assets/typography/fontfaces.css">
+<link rel="stylesheet" href="../../assets/tokens.css">
+<style>
+  .wrap{ max-width:880px; margin:0 auto; padding:clamp(2.2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 5rem; position:relative; z-index:1; }
+  .m-eyebrow{ font-family:var(--font-mono); font-size:9px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); }
+  .m-name{ font-family:var(--font-display); font-weight:500; font-size:clamp(1.8rem,5vw,2.6rem); margin:.35rem 0 .2rem; }
+  .m-tag{ font-family:var(--font-mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  #field{ position:relative; width:100%; height:min(70vh,560px); margin-top:1.4rem; border:1px solid var(--line); background:var(--panel); cursor:grab; touch-action:none; }
+  #field.is-dragging{ cursor:grabbing; }
+  #field canvas{ width:100%; height:100%; display:block; }
+  .field-caption{ margin-top:.7rem; font-family:var(--font-mono); font-size:.62rem; letter-spacing:.05em; color:var(--muted-2); text-transform:uppercase; display:flex; justify-content:space-between; flex-wrap:wrap; gap:.4rem; }
+  .note{ margin-top:1.6rem; font-size:.84rem; color:var(--muted); line-height:1.6; max-width:60ch; }
+  .note b{ color:var(--ink); font-weight:600; }
+  .colophon{ margin-top:2.6rem; padding-top:1.4rem; border-top:1px solid var(--line); font-family:var(--font-mono); font-size:.66rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 class="sr-only" style="position:absolute;left:-9999px;">Topology prototype: real aggregated language usage placed on a live polar field, in the identity direction that makes the mathematical diagram the primary artifact rather than a supporting illustration.</h1>
+
+  <p class="m-eyebrow">Field · Topology (Direction D)</p>
+  <div class="m-name">Xinyue Zhang</div>
+  <p class="m-tag" id="field-tag">stack, by share of authored bytes — loading…</p>
+
+  <div id="field" role="img" aria-label="Live polar field placing languages by real aggregated byte share, dominant language nearest center — drag to rotate"></div>
+  <div class="field-caption">
+    <span>vortex-field.js, fed real data · drag to rotate</span>
+    <span id="field-source">source: assets/generated/languages.json</span>
+  </div>
+
+  <p class="note"><b>Flagged direction:</b> this inverts the brief's own "typography anchors, math breathes" instruction — here the field <em>is</em> the page, typography only captions it. See <code>docs/identity-directions.md</code> §D for why that's a real risk, not just a style choice: a map that isn't legible in ten seconds fails the "curiosity in ten seconds" test the whole project was scoped against.</p>
+
+  <div class="colophon">assets/js/vortex-field.js, ported from echo/frontend/helperJS/vortex.js via MuseLab's vortexCanvas.ts</div>
+</div>
+
+<script type="module">
+import { mountVortexField } from '../../assets/js/vortex-field.js';
+
+async function loadJSON(path) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(res.status);
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+(async () => {
+  const data = await loadJSON('../../assets/generated/languages.json');
+  const field = document.getElementById('field');
+  const tag = document.getElementById('field-tag');
+
+  if (!data) {
+    tag.textContent = 'could not load languages.json — serve over http, not file://';
+    field.innerHTML = '<p style="padding:2rem;font-family:var(--font-mono);font-size:.75rem;color:var(--muted-2);">Run e.g. `python3 -m http.server` from the repo root and open this page via http://localhost.</p>';
+    return;
+  }
+
+  const langs = data.languages;
+  const maxShare = langs[0].share_pct;
+  const terms = langs.map((l, i) => ({
+    text: l.language,
+    score: l.share_pct / maxShare,
+    core: i < 1,
+  }));
+
+  tag.textContent = `stack, by share of authored bytes — ${langs[0].language} leads at ${langs[0].share_pct}%`;
+
+  mountVortexField(field, terms, {
+    motion: 0.22,
+    intensity: 0.55,
+    referenceSize: 250,
+    initialRotation: -0.4,
+  });
+})();
+</script>
+</body>
+</html>
